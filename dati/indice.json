@@ -1,0 +1,29 @@
+{
+  "formato": 1,
+  "file": {
+    "auto.json": {
+      "byte": 331339,
+      "sha256": "86f85e94dcc19a11eed8530f887d1eaa95b801eb230ae93d45922455de4fbe9a",
+      "data": "2026-11-06"
+    },
+    "carburanti.json": {
+      "byte": 1084,
+      "sha256": "6345fddbbd30008dd1fe9d907866e64c8c7e77986f5df307563ac6835297e2f9",
+      "data": "2026-11-16"
+    },
+    "listino.json": {
+      "byte": 288075,
+      "sha256": "19db35afd7fc5002fbdbd49e532c0407342877f5ed6852e21894ffa58e4c9844",
+      "data": "2026-11-06"
+    },
+    "storico_carburanti_it.csv": {
+      "byte": 34992,
+      "sha256": "c99f1db10109a92716246a79a0997e2275010f6a45aca402e08ef19bca73b050"
+    },
+    "tariffe.json": {
+      "byte": 794,
+      "sha256": "45928dc8c3b94d1b11d8453ff65cb7b140dcc079b579cbb1d4713bc8c93531bb",
+      "data": "2026-11-16"
+    }
+  }
+}
