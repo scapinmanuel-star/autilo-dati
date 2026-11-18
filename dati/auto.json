@@ -1,6 +1,6 @@
 {
  "versione": 3,
- "data_aggiornamento": "2026-11-06",
+ "data_aggiornamento": "2026-11-18",
  "nota": "Generato da autilo_prezzi_v3.xlsx con tool/genera_catalogo.py. Prezzi chiavi in mano dell'allestimento centrale; 'stima' e 'datato' compaiono nell'app come 'da verificare'.",
  "quota_km_elettrici_plugin_eea": 0.243,
  "auto": [
@@ -166,7 +166,7 @@
    "id": "kia-picanto-benzina-998-49kw",
    "marca": "Kia",
    "modello": "Picanto",
-   "allestimento": "Style (manuale)",
+   "allestimento": "Style 1.0 GDi 68 CV (manuale)",
    "motore": "1.0 67 CV",
    "alimentazione": "benzina",
    "segmento": "citycar",
@@ -175,9 +175,9 @@
    "consumo_l100": 5.77,
    "veicoli_eea": 2208,
    "prezzo_listino_eur": 19900,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/kia/picanto/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Kia/picanto/1-0-mpi-urban.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -191,7 +191,8 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: 1.0; pagina senza data, indica 'listino 2026'; motore per allestimento non indicato; fonte senza data; Urban 17.800 verificato (motor1, 17/6/2026)"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (stesso prezzo su automoto.it), oggi 50 kW (68 CV), Urban 17.800, GT-Line 21.050",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "kia-picanto-benzina-998-74kw",
@@ -207,8 +208,8 @@
    "veicoli_eea": 37,
    "prezzo_listino_eur": 16000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://autosupermarket.it/auto/kia/picanto",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -222,13 +223,13 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "potenza non corrisponde al 1.0 del listino 2026 (63-68 CV): controllare"
+   "nota_listino": "il 1.0 T-GDI da 100 CV è uscito di listino: oggi la Picanto ha solo il 1.0 GDi da 68 CV (anche GPL da 64 CV)"
   },
   {
    "id": "dacia-spring-elettrica-x-48kw",
    "marca": "Dacia",
    "modello": "Spring",
-   "allestimento": "Expression (automatico)",
+   "allestimento": "Expression Electric 70",
    "motore": "elettrico 70 CV",
    "alimentazione": "elettrica",
    "segmento": "citycar elettrica",
@@ -236,9 +237,9 @@
    "consumo_kwh100": 13.2,
    "veicoli_eea": 4021,
    "prezzo_listino_eur": 17900,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/nuova-dacia-spring-2026-motori-allestimenti-prezzi/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Dacia/spring/comfort-electric-45-33kw/configuratore.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -252,8 +253,8 @@
     "5": 0.37,
     "10": 0.16
    },
-   "data_prezzo": "2025-11-11",
-   "nota_listino": "listino: 70 CV; fonte del 2025-11-11, da ricontrollare; nel dataset EEA il motore è da 65 CV"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino 2026 consultato il 18/11/2026, invariato dal lancio di ottobre 2025, da febbraio 2026 in Italia la Spring si trova solo in pronta consegna"
   },
   {
    "id": "dacia-spring-elettrica-x-33kw",
@@ -289,16 +290,16 @@
    "id": "dacia-spring-elettrica-x-74kw",
    "marca": "Dacia",
    "modello": "Spring",
-   "allestimento": "Extreme (automatico)",
+   "allestimento": "Extreme Electric 100",
    "motore": "elettrico 100 CV",
    "alimentazione": "elettrica",
    "segmento": "citycar elettrica",
    "potenza_kw": 74,
    "consumo_kwh100": 13.6,
    "prezzo_listino_eur": 19700,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/nuova-dacia-spring-2026-motori-allestimenti-prezzi/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Dacia/spring/comfort-electric-45-33kw/configuratore.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -312,15 +313,15 @@
     "5": 0.37,
     "10": 0.16
    },
-   "data_prezzo": "2025-11-11",
+   "data_prezzo": "2026-11-18",
    "note_dati": "kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "riga aggiunta dal listino: 100 CV; dati motore da listino (nessun dato EEA)"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, invariato dal lancio di ottobre 2025, da febbraio 2026 solo in pronta consegna"
   },
   {
    "id": "hyundai-i10-benzina-998-49kw",
    "marca": "Hyundai",
    "modello": "i10",
-   "allestimento": "Connectline Prime (prezzo alto) (manuale)",
+   "allestimento": "Prime 1.0 MPI 63 CV (manuale)",
    "motore": "1.0 MPI 63 CV",
    "alimentazione": "benzina",
    "segmento": "citycar",
@@ -330,7 +331,7 @@
    "veicoli_eea": 43,
    "prezzo_listino_eur": 19750,
    "affidabilita_prezzo": "datato",
-   "stato_listino": "a listino",
+   "stato_listino": "fuori listino",
    "fonte_prezzo": "https://dmassets.hyundai.com/is/content/hyundaiautoever/20251101_Listino_al_pubblico_Nuova_i10",
    "piano_tagliandi": {
     "intervallo_km": 15000,
@@ -346,7 +347,7 @@
     "10": 0.24
    },
    "data_prezzo": "2025-11-01",
-   "nota_listino": "listino: 1.0 MPI 63 CV; idem; fonte del 2025-11-01, da ricontrollare; prezzo 18.500 o 19.750: il listino non dice a quale allestimento"
+   "nota_listino": "fuori listino da luglio 2026 (produzione cessata), prezzo dell'ultimo listino ufficiale Hyundai in vigore dal 01/11/2025"
   },
   {
    "id": "dacia-sandero-benzina-999-67kw",
@@ -1453,17 +1454,17 @@
    "id": "opel-corsa-elettrica-x-100kw",
    "marca": "Opel",
    "modello": "Corsa",
-   "allestimento": "Elegance / GS",
+   "allestimento": "Ultimate (Electric 136 CV)",
    "motore": "Electric 136 Edition",
    "alimentazione": "elettrica",
    "segmento": "utilitaria",
    "potenza_kw": 100,
    "consumo_kwh100": 15.7,
    "veicoli_eea": 471,
-   "prezzo_listino_eur": 32000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 37450,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Opel/corsa.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -1477,13 +1478,14 @@
     "5": 0.37,
     "10": 0.16
    },
-   "nota_listino": "listino 2025: Electric 136 Edition 34.000 (fonte datata), prezzo 2026 non trovato"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, l'elettrica si vende solo in allestimento Ultimate (in estate era 37.150)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "opel-corsa-benzina-1199-74kw",
    "marca": "Opel",
    "modello": "Corsa",
-   "allestimento": "Edition (manuale)",
+   "allestimento": "Edition 1.2 100 CV (manuale)",
    "motore": "1.2 100 CV",
    "alimentazione": "benzina",
    "segmento": "utilitaria",
@@ -1491,10 +1493,10 @@
    "cilindrata_cc": 1199,
    "consumo_l100": 6.4,
    "veicoli_eea": 389,
-   "prezzo_listino_eur": 21350,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 21600,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.quattroruote.it/offerte-auto/opel-corsa.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Opel/corsa.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -1508,24 +1510,24 @@
     "5": 0.5,
     "10": 0.24
    },
-   "data_prezzo": "2026-11",
-   "nota_listino": "listino: 1.2 100 CV; pagina senza data, promozione valida fino al 30/11/2026; solo allestimento Edition; allestimento base: l'intermedio (YES) non verificato per il 2026"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (in estate 21.350)"
   },
   {
    "id": "opel-corsa-elettrica-x-115kw",
    "marca": "Opel",
    "modello": "Corsa",
-   "allestimento": "Elegance / GS",
+   "allestimento": "Ultimate (Electric 156 CV)",
    "motore": "Electric 156 YES",
    "alimentazione": "elettrica",
    "segmento": "utilitaria",
    "potenza_kw": 115,
    "consumo_kwh100": 14.0,
    "veicoli_eea": 65,
-   "prezzo_listino_eur": 32000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 38450,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Opel/corsa.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -1540,7 +1542,8 @@
     "10": 0.16
    },
    "note_dati": "kWh/100 km: stima: come Peugeot e-208 (stessa piattaforma)",
-   "nota_listino": "listino 2025: Electric 156 YES 35.500 (fonte datata), prezzo 2026 non trovato"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, solo allestimento Ultimate (in estate era 38.150)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "opel-corsa-benzina-1199-96kw",
@@ -1577,7 +1580,7 @@
    "id": "opel-corsa-ibrida-1199-74kw",
    "marca": "Opel",
    "modello": "Corsa",
-   "allestimento": "Edition (automatico)",
+   "allestimento": "Edition 1.2 Hybrid 110 CV (DCT6)",
    "motore": "1.2 Hybrid 110 CV",
    "alimentazione": "ibrida",
    "segmento": "utilitaria",
@@ -1585,10 +1588,10 @@
    "cilindrata_cc": 1199,
    "consumo_l100": 5.65,
    "veicoli_eea": 41,
-   "prezzo_listino_eur": 24000,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 24400,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.autoblog.it/post/opel-corsa-my26-torna-in-offerta-in-tutte-le-motorizzazioni-sconti-importanti",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Opel/corsa.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -1602,14 +1605,14 @@
     "5": 0.5,
     "10": 0.24
    },
-   "data_prezzo": "2026-04-08",
-   "nota_listino": "listino: 1.2 Hybrid 110 CV; listino aprile 2026; allestimento base; EEA 74 kW vs 81 kW del listino"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 81 kW (110 CV) di sistema"
   },
   {
    "id": "suzuki-swift-ibrida-1197-61kw",
    "marca": "Suzuki",
    "modello": "Swift",
-   "allestimento": "Top 2WD (manuale)",
+   "allestimento": "Top 2WD 1.2 Hybrid (manuale)",
    "motore": "1.2 Hybrid 83 CV",
    "alimentazione": "ibrida",
    "segmento": "utilitaria",
@@ -1618,9 +1621,9 @@
    "consumo_l100": 5.21,
    "veicoli_eea": 3276,
    "prezzo_listino_eur": 22950,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Suzuki/swift-hybrid/1-2-hybrid-cool-2wd.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Suzuki/swift-hybrid/1-2-hybrid-top-2wd.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -1634,7 +1637,8 @@
     "5": 0.5,
     "10": 0.24
    },
-   "nota_listino": "listino: 1.2 Hybrid; pagina senza data (indica 2026); fonte senza data"
+   "nota_listino": "listino ufficiale Suzuki aggiornato ad agosto 2026 (autosupermarket.it), invariato al 18/11/2026, 60 kW (81 CV)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "suzuki-swift-ibrida-1373-95kw",
@@ -1862,7 +1866,7 @@
    "id": "mg-mg3-ibrida-1498-75kw",
    "marca": "MG",
    "modello": "MG3",
-   "allestimento": "Comfort (automatico)",
+   "allestimento": "Comfort Hybrid+ (automatico)",
    "motore": "Hybrid+ 1.5 102 CV",
    "alimentazione": "ibrida",
    "segmento": "utilitaria",
@@ -1871,9 +1875,9 @@
    "consumo_l100": 5.37,
    "veicoli_eea": 2513,
    "prezzo_listino_eur": 21490,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/mg/mg3/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/MG/mg3.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -1887,7 +1891,8 @@
     "5": 0.5,
     "10": 0.24
    },
-   "nota_listino": "listino: Hybrid+ 1.5; pagina senza data; Standard 19.990 confermato da quotidianomotori (9/10/2026); fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 143 kW (195 CV) di sistema, i 75 kW sono del motore termico",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "fiat-500-ibrida-999-52kw",
@@ -2084,17 +2089,17 @@
    "id": "byd-dolphin-surf-elettrica-x-65kw",
    "marca": "BYD",
    "modello": "Dolphin Surf",
-   "allestimento": "Boost",
+   "allestimento": "Boost (88 CV, 43,2 kWh)",
    "motore": "elettrico 43,2 kWh 88 CV",
    "alimentazione": "elettrica",
    "segmento": "utilitaria elettrica",
    "potenza_kw": 65,
    "consumo_kwh100": 15.6,
    "veicoli_eea": 3724,
-   "prezzo_listino_eur": 22490,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 23290,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/byd-dolphin-surf-allestimenti-dotazioni-prezzi/",
+   "fonte_prezzo": "https://www.drivek.it/byd/dolphin-surf/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -2108,24 +2113,24 @@
     "5": 0.37,
     "10": 0.16
    },
-   "data_prezzo": "2025-05-22",
-   "nota_listino": "listino: 43,2 kWh; fonte di maggio 2025; sicurauto (28/5/2025) riporta 19.490 / 22.990 / 25.990: da ricontrollare; fonte del 2025-05-22, da ricontrollare"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "prezzi 2026 consultati il 18/11/2026 (uguali su cheautocompro.it)"
   },
   {
    "id": "byd-dolphin-surf-elettrica-x-115kw",
    "marca": "BYD",
    "modello": "Dolphin Surf",
-   "allestimento": "Comfort / Design",
+   "allestimento": "Comfort (156 CV, 43,2 kWh)",
    "motore": "elettrico 156 CV",
    "alimentazione": "elettrica",
    "segmento": "utilitaria elettrica",
    "potenza_kw": 115,
    "consumo_kwh100": 16.0,
    "veicoli_eea": 714,
-   "prezzo_listino_eur": 28000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 26290,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.drivek.it/byd/dolphin-surf/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -2139,7 +2144,8 @@
     "5": 0.37,
     "10": 0.16
    },
-   "nota_listino": "potenza 115 kW non corrisponde al Dolphin Surf (65 kW): controllare"
+   "nota_listino": "prezzi 2026 consultati il 18/11/2026 (uguali su cheautocompro.it), Active 19.790, Boost 23.290",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "jeep-avenger-elettrica-x-115kw",
@@ -3367,17 +3373,17 @@
    "id": "ford-puma-elettrica-x-124kw",
    "marca": "Ford",
    "modello": "Puma",
-   "allestimento": "Gen-E",
+   "allestimento": "Gen-E (46,8 kWh)",
    "motore": "elettrico 46 kWh 168 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV compatto",
    "potenza_kw": 124,
    "consumo_kwh100": 13.1,
    "veicoli_eea": 2559,
-   "prezzo_listino_eur": 32950,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 33250,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/magazine/ford-puma-prezzi-della-guida-autonoma-bluecruise-e-altre-novita",
+   "fonte_prezzo": "https://autosupermarket.it/auto/ford/puma",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -3391,13 +3397,14 @@
     "5": 0.4,
     "10": 0.17
    },
-   "nota_listino": "listino: elettrico 46 kWh 168 CV; data pagina non indicata; cv da cheautocompro.it 2026-03-09; la pagina cheautocompro indica per Gen-E solo prezzi promo (27250); fonte senza data"
+   "nota_listino": "Puma Gen-E 2026 con batteria da 46,8 kWh, prezzo base 33.250 (anche su it.motor1.com), Premium 35.200",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "ford-puma-ibrida-999-114kw",
    "marca": "Ford",
    "modello": "Puma",
-   "allestimento": "ST-Line (automatico (Powershift 7 rapporti))",
+   "allestimento": "ST-Line 1.0 EcoBoost Hybrid 155 CV (Powershift)",
    "motore": "1.0 EcoBoost Hybrid 155 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV compatto",
@@ -3405,10 +3412,10 @@
    "cilindrata_cc": 999,
    "consumo_l100": 6.89,
    "veicoli_eea": 1362,
-   "prezzo_listino_eur": 31650,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 32000,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.ford.it/content/dam/guxeu/it/documents/pricelists/cars/PL-Puma_2025.75.pdf",
+   "fonte_prezzo": "https://www.drivek.it/ford/puma/versioni",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -3422,8 +3429,8 @@
     "5": 0.53,
     "10": 0.26
    },
-   "data_prezzo": "2025-04-17",
-   "nota_listino": "listino: 1.0 EcoBoost Hybrid 155 CV; come sopra: listino 04/2025 possibile non aggiornato; fonte del 2025-04-17, da ricontrollare"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (uguale su patentati.it)"
   },
   {
    "id": "ford-puma-benzina-999-70kw",
@@ -4056,7 +4063,7 @@
    "id": "citroen-c3-aircross-elettrica-x-83kw",
    "marca": "Citroen",
    "modello": "C3 Aircross",
-   "allestimento": "Max",
+   "allestimento": "Max (elettrico 113 CV)",
    "motore": "elettrico 113 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV compatto",
@@ -4064,9 +4071,9 @@
    "consumo_kwh100": 18.3,
    "veicoli_eea": 738,
    "prezzo_listino_eur": 31390,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.automoto.it/listino/citroen/c3-aircross/12-hybrid-collection-145cv-edcs6/191451",
+   "fonte_prezzo": "https://www.sicurauto.it/news/novita-del-mercato/citroen-c3-quanto-costa-con-lo-sconto-e-il-finanziamento/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -4081,13 +4088,14 @@
     "10": 0.17
    },
    "note_dati": "kWh/100 km: WLTP dichiarato",
-   "nota_listino": "listino: elettrico 113 CV; pagina senza data; fonte senza data"
+   "nota_listino": "listino ufficiale Citroën riportato da sicurauto.it ad agosto 2026",
+   "data_prezzo": "2026-08-07"
   },
   {
    "id": "citroen-c3-aircross-benzina-1199-81kw",
    "marca": "Citroen",
    "modello": "C3 Aircross",
-   "allestimento": "Plus (manuale)",
+   "allestimento": "Plus 1.2 Turbo 100 (manuale)",
    "motore": "1.2 Turbo 100 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
@@ -4096,9 +4104,9 @@
    "consumo_l100": 6.72,
    "veicoli_eea": 684,
    "prezzo_listino_eur": 23150,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.automoto.it/listino/citroen/c3-aircross/12-hybrid-collection-145cv-edcs6/191451",
+   "fonte_prezzo": "https://www.sicurauto.it/news/novita-del-mercato/citroen-c3-quanto-costa-con-lo-sconto-e-il-finanziamento/",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4112,7 +4120,8 @@
     "5": 0.53,
     "10": 0.26
    },
-   "nota_listino": "listino: 1.2 Turbo 100 CV; pagina senza data; cambio da alvolante.it; fonte senza data"
+   "nota_listino": "listino ufficiale Citroën riportato da sicurauto.it ad agosto 2026",
+   "data_prezzo": "2026-08-07"
   },
   {
    "id": "citroen-c3-aircross-benzina-1199-96kw",
@@ -4180,14 +4189,14 @@
    "id": "citroen-c3-aircross-ibrida-x-107kw",
    "marca": "Citroen",
    "modello": "C3 Aircross",
-   "allestimento": "Collection (automatico e-DCS6)",
+   "allestimento": "Collection 1.2 Hybrid 145 (e-DCS6)",
    "motore": "1.2 Hybrid e-DCS6 145 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV compatto",
    "potenza_kw": 107,
    "consumo_l100": 7.66,
    "prezzo_listino_eur": 27950,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://www.automoto.it/listino/citroen/c3-aircross/12-hybrid-collection-145cv-edcs6/191451",
    "piano_tagliandi": {
@@ -4204,13 +4213,14 @@
     "10": 0.26
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (96 kW)",
-   "nota_listino": "listino: 1.2 Hybrid e-DCS6 145 CV; pagina senza data; cambio automatico 6 marce dichiarato in pagina; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 (anche su sicurauto.it ad agosto 2026)",
+   "data_prezzo": "2026-08-07"
   },
   {
    "id": "byd-atto-2-dm-i-plugin-x-121kw",
    "marca": "BYD",
    "modello": "Atto 2 DM-i",
-   "allestimento": "Active (automatico)",
+   "allestimento": "Active (166 CV, 7,8 kWh)",
    "motore": "1.5 phev 165 CV",
    "alimentazione": "plugin",
    "segmento": "SUV compatto",
@@ -4218,9 +4228,9 @@
    "consumo_l100": 6.37,
    "consumo_kwh100": 19.9,
    "prezzo_listino_eur": 27600,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.auto.it/marche/byd-byd/modelli/atto-2-dm-i-3467",
+   "fonte_prezzo": "https://www.hdmotori.it/byd-atto-2-dmi-debutto-italia-prezzi-specifiche/",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4234,15 +4244,15 @@
     "5": 0.46,
     "10": 0.21
    },
-   "data_prezzo": "2025-10-31",
+   "data_prezzo": "2026-03-18",
    "note_dati": "consumo a batteria scarica: media delle ibride del segmento; kWh/100 km: media degli altri modelli BYD",
-   "nota_listino": "listino: 1.5 phev 165 CV; CV dal nome versione sulla pagina (la scheda riporta 98 CV). Stesso prezzo su hdmotori 2026-03-18 (batteria 7,8 kWh). Prezzo di lancio 23900; fonte del 2025-10-31, da ricontrollare; dati motore da listino (nessun dato EEA)"
+   "nota_listino": "listino ufficiale al lancio italiano del 18/03/2026 (prezzo di lancio 23.900), stesso listino su motorbox.com"
   },
   {
    "id": "byd-atto-2-dm-i-plugin-x-156kw",
    "marca": "BYD",
    "modello": "Atto 2 DM-i",
-   "allestimento": "Boost (automatico)",
+   "allestimento": "Boost (212 CV, 18 kWh)",
    "motore": "1.5 phev 212 CV",
    "alimentazione": "plugin",
    "segmento": "SUV compatto",
@@ -4250,9 +4260,9 @@
    "consumo_l100": 6.37,
    "consumo_kwh100": 19.9,
    "prezzo_listino_eur": 30100,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.auto.it/marche/byd-byd/modelli/atto-2-dm-i-3467",
+   "fonte_prezzo": "https://www.hdmotori.it/byd-atto-2-dmi-debutto-italia-prezzi-specifiche/",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4266,24 +4276,24 @@
     "5": 0.46,
     "10": 0.21
    },
-   "data_prezzo": "2025-10-31",
+   "data_prezzo": "2026-03-18",
    "note_dati": "consumo a batteria scarica: media delle ibride del segmento; kWh/100 km: media degli altri modelli BYD",
-   "nota_listino": "listino: 1.5 phev 212 CV; CV dal nome versione (la scheda riporta 98 CV). Confermato 30100 da alvolante.it del 2026-11-02 (offerta nov 2026 a 27050) e da hdmotori 202; fonte del 2025-10-31, da ricontrollare; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino ufficiale al lancio italiano del 18/03/2026 (prezzo di lancio 26.500)"
   },
   {
    "id": "omoda-omoda-5-benzina-x-108kw",
    "marca": "Omoda",
    "modello": "Omoda 5",
-   "allestimento": "Comfort (DCT 7 marce)",
+   "allestimento": "Comfort 1.6 TGDI 147 CV (7DCT)",
    "motore": "1.6 TGDi 147 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
    "potenza_kw": 108,
    "consumo_l100": 7.27,
    "prezzo_listino_eur": 27900,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.quotidianomotori.com/automobili/omoda-5-pure-suv/",
+   "fonte_prezzo": "https://www.quotidianomotori.com/automobili/omoda-5-shs-h-full-hybrid-italia-2025/",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4297,9 +4307,9 @@
     "5": 0.53,
     "10": 0.26
    },
-   "data_prezzo": "2025-06-13",
+   "data_prezzo": "2026-11-18",
    "note_dati": "consumo: media dei motori simili del segmento (nessun dato EEA per il modello)",
-   "nota_listino": "listino: 1.6 TGDi 147 CV; Listino in vigore dal 2025-06-01 (letto su quotidianomotori.com/automobili/omoda-5-listino-prezzi-allestimenti/). Non presente nelle fonti p; fonte del 2025-06-13, da ricontrollare; dati motore da listino (nessun dato EEA)"
+   "nota_listino": "listino Omoda 5 con la versione Comfort a 27.900, nel 2026 Pure 26.900 e Premium 29.900 ancora invariati (auto.it)"
   },
   {
    "id": "omoda-omoda-5-ibrida-x-165kw",
@@ -4336,7 +4346,7 @@
    "id": "kia-stonic-benzina-998-74kw",
    "marca": "Kia",
    "modello": "Stonic",
-   "allestimento": "Urban (manuale 6 marce)",
+   "allestimento": "Urban 1.0 T-GDi 100 CV (manuale 6 marce)",
    "motore": "1.0 T-GDi 100 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
@@ -4345,9 +4355,9 @@
    "consumo_l100": 6.32,
    "veicoli_eea": 918,
    "prezzo_listino_eur": 22800,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://euromotor.it/wp-content/uploads/2022/07/ListinoNuovaKiaStonicPubblico05_11_2025.pdf",
+   "fonte_prezzo": "https://www.autosupermarket.it/auto/kia/stonic",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4363,22 +4373,22 @@
    },
    "data_prezzo": "2025-11-05",
    "note_dati": "potenza dalla scheda tecnica (74 kW, 998 cc); consumo reale EEA dell'1.2 aspirato da 62 kW, perché il 1.0 T-GDi non è abbinato nei dati EEA",
-   "nota_listino": "listino: 1.0 T-GDi 100 CV; Abbinamento allestimento/prezzo da alvolante.it/news/kia-stonic-2026-restyling-prezzi-409239 (2025-11-17). Motor1 luglio 2026 conferma listi; fonte del 2025-11-05, da ricontrollare"
+   "nota_listino": "listino ufficiale Kia Stonic 2026 del 05/11/2025, ancora in vigore al 18/11/2026"
   },
   {
    "id": "kia-stonic-ibrida-x-85kw",
    "marca": "Kia",
    "modello": "Stonic",
-   "allestimento": "Style (DCT 7 marce)",
+   "allestimento": "Style 1.0 T-GDi MHEV DCT7 115 CV",
    "motore": "1.0 T-GDi MHEV DCT7 115 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV compatto",
    "potenza_kw": 85,
    "consumo_l100": 6.32,
    "prezzo_listino_eur": 27750,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://euromotor.it/wp-content/uploads/2022/07/ListinoNuovaKiaStonicPubblico05_11_2025.pdf",
+   "fonte_prezzo": "https://www.autosupermarket.it/auto/kia/stonic",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4394,7 +4404,7 @@
    },
    "data_prezzo": "2025-11-05",
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (62 kW)",
-   "nota_listino": "listino: 1.0 T-GDi MHEV DCT7 115 CV; fonte del 2025-11-05, da ricontrollare; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino ufficiale Kia Stonic 2026 del 05/11/2025, ancora in vigore al 18/11/2026"
   },
   {
    "id": "volkswagen-golf-diesel-1968-85kw",
@@ -4877,7 +4887,7 @@
    "id": "audi-a3-diesel-1968-85kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "Business Advanced (manuale)",
+   "allestimento": "Sportback TDI 85 kW Business Advanced (manuale)",
    "motore": "TDI 85 kW 116 CV",
    "alimentazione": "diesel",
    "segmento": "compatta premium",
@@ -4886,9 +4896,9 @@
    "consumo_l100": 5.49,
    "veicoli_eea": 3654,
    "prezzo_listino_eur": 37800,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/30-tfsi-s-tronic-business-s-back.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4902,13 +4912,14 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: TDI 85 kW 116 CV; idem; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, a ottobre 2026 è annunciato un restyling con listino nuovo",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a3-diesel-1968-110kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "Sportback TDI 110 kW S tronic Business Advanced",
    "motore": "TDI 110 kW 150 CV",
    "alimentazione": "diesel",
    "segmento": "compatta premium",
@@ -4917,9 +4928,9 @@
    "consumo_l100": 5.92,
    "veicoli_eea": 2313,
    "prezzo_listino_eur": 41800,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/30-tfsi-s-tronic-business-s-back.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4933,13 +4944,14 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: TDI 110 kW 150 CV; idem; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (uguale su auto.it)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a3-plugin-1395-110kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "Business (S tronic)",
+   "allestimento": "Sportback e-hybrid 150 kW S tronic Business",
    "motore": "e-hybrid 150 kW 204 CV",
    "alimentazione": "plugin",
    "segmento": "compatta premium",
@@ -4950,9 +4962,9 @@
    "consumo_kwh100": 14.9,
    "veicoli_eea": 1227,
    "prezzo_listino_eur": 44600,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/35-tfsi-s-tronic-business.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -4967,7 +4979,8 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello",
-   "nota_listino": "listino: e-hybrid 150 kW 204 CV; idem; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 150 kW (204 CV) di sistema, i 110 kW sono del motore termico",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a3-ibrida-1498-110kw",
@@ -5098,7 +5111,7 @@
    "id": "audi-a3-benzina-999-81kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "Business Advanced (manuale)",
+   "allestimento": "Sportback TFSI 85 kW Business Advanced (manuale)",
    "motore": "TFSI 85 kW 116 CV",
    "alimentazione": "benzina",
    "segmento": "compatta premium",
@@ -5107,9 +5120,9 @@
    "consumo_l100": 6.44,
    "veicoli_eea": 198,
    "prezzo_listino_eur": 35650,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/30-tfsi.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -5123,7 +5136,8 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: TFSI 85 kW 116 CV; idem; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, oggi è un 1.5 da 85 kW (116 CV), i dati EEA sono del vecchio 1.0 da 81 kW",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a3-benzina-1984-140kw",
@@ -5160,16 +5174,16 @@
    "id": "audi-a3-benzina-x-118kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "Business (S tronic)",
+   "allestimento": "Sportback TFSI 110 kW S tronic Business",
    "motore": "TFSI 118 kW 160 CV",
    "alimentazione": "benzina",
    "segmento": "compatta premium",
    "potenza_kw": 118,
    "consumo_l100": 8.54,
    "prezzo_listino_eur": 37550,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/30-tdi-s-back.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -5183,13 +5197,14 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: TFSI 118 kW 160 CV; idem; fonte senza data; riga aggiunta dal listino; consumo copiato dal motore EEA più simile"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, nel listino il 1.5 TFSI mild hybrid ha 110 kW (150 CV)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a3-plugin-x-200kw",
    "marca": "Audi",
    "modello": "A3",
-   "allestimento": "S Line (S tronic)",
+   "allestimento": "Sportback e-hybrid 200 kW S tronic S Line",
    "motore": "e-hybrid 200 kW 272 CV",
    "alimentazione": "plugin",
    "segmento": "compatta premium",
@@ -5197,9 +5212,9 @@
    "consumo_l100": 8.54,
    "consumo_kwh100": 14.9,
    "prezzo_listino_eur": 53700,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a3-sportback/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a3-sportback/30-tdi.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -5214,7 +5229,8 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione termico da 140 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino: e-hybrid 200 kW 272 CV; idem; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "toyota-c-hr-ibrida-1798-72kw",
@@ -5700,17 +5716,17 @@
    "id": "peugeot-3008-elettrica-x-157kw",
    "marca": "Peugeot",
    "modello": "3008",
-   "allestimento": "Allure (monomarcia)",
+   "allestimento": "Allure (e-3008 210 CV, 73 kWh)",
    "motore": "e-3008 210 CV 73 kWh",
    "alimentazione": "elettrica",
    "segmento": "SUV medio",
    "potenza_kw": 157,
    "consumo_kwh100": 17.0,
    "veicoli_eea": 494,
-   "prezzo_listino_eur": 43730,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 43780,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/peugeot-3008/111-1007764/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/e-3008.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -5725,7 +5741,8 @@
     "10": 0.17
    },
    "note_dati": "kWh/100 km: WLTP dichiarato",
-   "nota_listino": "listino: e-3008 210 CV 73 kWh 210 CV; Listino MY2024 senza data, probabilmente superato; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, Allure Business 45.180 (anche su automoto.it e alvolante.it)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "peugeot-3008-plugin-1598-133kw",
@@ -5796,7 +5813,7 @@
    "id": "peugeot-3008-plugin-1598-147kw",
    "marca": "Peugeot",
    "modello": "3008",
-   "allestimento": "Allure Business (e-DCS7)",
+   "allestimento": "Allure Business Plug-in Hybrid 225 (e-DCS7)",
    "motore": "Plug-in Hybrid 195 CV",
    "alimentazione": "plugin",
    "segmento": "SUV medio",
@@ -5806,10 +5823,10 @@
    "consumo_l100_reale_misto": 6.23,
    "consumo_kwh100": 16.3,
    "veicoli_eea": 111,
-   "prezzo_listino_eur": 47100,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 47980,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://euromotor.it/wp-content/uploads/2023/11/Listino_Novembre_peugeot-2025-2.pdf",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/3008/bluehdi-130-s-s-allure-pack.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -5823,15 +5840,15 @@
     "5": 0.45,
     "10": 0.2
    },
-   "data_prezzo": "2025-11-03",
+   "data_prezzo": "2026-11-18",
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 100 kW dello stesso modello",
-   "nota_listino": "listino: Plug-in Hybrid 195 195 CV; fonte del 2025-11-03, da ricontrollare"
+   "nota_listino": "la Plug-in Hybrid 195 è stata sostituita dalla 225 CV (165 kW): prezzo della nuova, consumi ancora della 195"
   },
   {
    "id": "peugeot-3008-ibrida-1199-100kw",
    "marca": "Peugeot",
    "modello": "3008",
-   "allestimento": "Allure Business (e-DCS6)",
+   "allestimento": "Allure Business Hybrid 145 (e-DCS6)",
    "motore": "Hybrid 145 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV medio",
@@ -5839,10 +5856,10 @@
    "cilindrata_cc": 1199,
    "consumo_l100": 7.05,
    "veicoli_eea": 101,
-   "prezzo_listino_eur": 42170,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 43050,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://euromotor.it/wp-content/uploads/2023/11/Listino_Novembre_peugeot-2025-2.pdf",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/3008/bluehdi-130-s-s-allure-pack.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -5856,23 +5873,23 @@
     "5": 0.52,
     "10": 0.26
    },
-   "data_prezzo": "2025-11-03",
-   "nota_listino": "listino: Hybrid 145 145 CV; fonte del 2025-11-03, da ricontrollare"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (a marzo 2026 era 42.320), 107 kW (145 CV) di sistema"
   },
   {
    "id": "peugeot-3008-elettrica-x-169kw",
    "marca": "Peugeot",
    "modello": "3008",
-   "allestimento": "Allure (monomarcia)",
+   "allestimento": "Allure Long Range (e-3008 230 CV, 98 kWh)",
    "motore": "e-3008 230 CV 97 kWh Long Range",
    "alimentazione": "elettrica",
    "segmento": "SUV medio",
    "potenza_kw": 169,
    "consumo_kwh100": 17.0,
-   "prezzo_listino_eur": 47980,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 48430,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/peugeot-3008/111-1007764/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/e-3008.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 2,
@@ -5887,7 +5904,8 @@
     "10": 0.17
    },
    "note_dati": "kWh/100 km: stima: come la versione da 157 kW",
-   "nota_listino": "listino: e-3008 230 CV 97 kWh Long Range 230 CV; Listino MY2024 senza data, probabilmente superato; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "volkswagen-tiguan-diesel-1968-110kw",
@@ -6663,7 +6681,7 @@
    "id": "byd-seal-u-dm-i-plugin-1497-96kw",
    "marca": "BYD",
    "modello": "Seal U DM-i",
-   "allestimento": "Boost",
+   "allestimento": "Boost (218 CV, 2WD)",
    "motore": "1.5 PHEV 2WD 217 CV",
    "alimentazione": "plugin",
    "segmento": "SUV medio",
@@ -6674,9 +6692,9 @@
    "consumo_kwh100": 20.9,
    "veicoli_eea": 138,
    "prezzo_listino_eur": 40100,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.automoto.it/listino/byd/seal-u-dm-i",
+   "fonte_prezzo": "https://www.byd.com/it/promozioni/byd-seal-u-dm-i-promozioni",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -6691,7 +6709,8 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica stimato dal dato EEA misto",
-   "nota_listino": "listino: 1.5 PHEV 2WD 217 CV; Listino Gen'24 probabilmente superato. Cambio non indicato; fonte senza data"
+   "nota_listino": "prezzo di listino indicato da BYD Italia nelle note delle promozioni in corso, 160 kW di sistema, i 96 kW sono del motore termico",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "jaecoo-jaecoo-7-ibrida-x-165kw",
@@ -6728,7 +6747,7 @@
    "id": "jaecoo-jaecoo-7-plugin-x-205kw",
    "marca": "Jaecoo",
    "modello": "Jaecoo 7",
-   "allestimento": "Pure/Select (SHS-P) (DHT automatico)",
+   "allestimento": "Pure SHS-P (279 CV)",
    "motore": "1.5 TGDi PHEV 279 CV",
    "alimentazione": "plugin",
    "segmento": "SUV medio",
@@ -6736,9 +6755,9 @@
    "consumo_l100": 6.55,
    "consumo_kwh100": 17.3,
    "prezzo_listino_eur": 38900,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.omodajaecooitalia.com/wp-content/uploads/2025/11/Listino-Jaecoo-7-SHS-P-Novembre-2025.pdf",
+   "fonte_prezzo": "https://www.automoto.it/listino/jaecoo/jaecoo-7-shs/-p-15-tgdi-phev-pure-auto/190937",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -6752,15 +6771,15 @@
     "5": 0.45,
     "10": 0.2
    },
-   "data_prezzo": "2025-11-01",
+   "data_prezzo": "2026-11-18",
    "note_dati": "consumo a batteria scarica: media delle ibride del segmento; kWh/100 km: media del segmento",
-   "nota_listino": "listino: 1.5 TGDi PHEV 279 CV; Nel PDF l'allestimento si chiama Select (automoto.it e auto.it lo chiamano Pure). Chiavi in mano con messa su strada 690. Esclude contributo; fonte del 2025-11-01, da ricontrollare; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 (uguale su alvolante.it e quotidianomotori.com)"
   },
   {
    "id": "audi-q3-diesel-1968-110kw",
    "marca": "Audi",
    "modello": "Q3",
-   "allestimento": "Business (S tronic)",
+   "allestimento": "TDI 110 kW S tronic Business",
    "motore": "TDI 110 kW 150 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -6769,7 +6788,7 @@
    "consumo_l100": 6.61,
    "veicoli_eea": 8271,
    "prezzo_listino_eur": 45500,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://www.drivek.it/audi/q3/versioni",
    "piano_tagliandi": {
@@ -6785,7 +6804,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: TDI 110 kW 150 CV; trazione anteriore. Business Advanced senza prezzo di listino in pagina (solo noleggio); fonte senza data"
+   "nota_listino": "listino Audi Q3 MY27 valido dal 09/07/2026 (autoscout24.it), prezzi uguali su drivek.it",
+   "data_prezzo": "2026-07-09"
   },
   {
    "id": "audi-q3-diesel-1968-147kw",
@@ -6822,7 +6842,7 @@
    "id": "audi-q3-benzina-1498-110kw",
    "marca": "Audi",
    "modello": "Q3",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "TFSI 110 kW S tronic Business Advanced",
    "motore": "TFSI 110 kW 150 CV",
    "alimentazione": "benzina",
    "segmento": "SUV premium",
@@ -6831,7 +6851,7 @@
    "consumo_l100": 7.69,
    "veicoli_eea": 731,
    "prezzo_listino_eur": 46800,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://www.drivek.it/audi/q3/versioni",
    "piano_tagliandi": {
@@ -6847,13 +6867,14 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: TFSI 110 kW 150 CV; trazione anteriore; fonte senza data"
+   "nota_listino": "listino Audi Q3 MY27 valido dal 09/07/2026, Business 44.200",
+   "data_prezzo": "2026-07-09"
   },
   {
    "id": "audi-q3-plugin-1395-110kw",
    "marca": "Audi",
    "modello": "Q3",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "e-hybrid 150 kW Business Advanced",
    "motore": "e-hybrid 150 kW 204 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -6864,7 +6885,7 @@
    "consumo_kwh100": 16.7,
    "veicoli_eea": 615,
    "prezzo_listino_eur": 51600,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://www.drivek.it/audi/q3/versioni",
    "piano_tagliandi": {
@@ -6881,7 +6902,8 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello",
-   "nota_listino": "listino: e-hybrid 150 kW 204 CV; fonte senza data"
+   "nota_listino": "listino Audi Q3 MY27 valido dal 09/07/2026, 150 kW (204 CV) di sistema, i 110 kW sono del motore termico",
+   "data_prezzo": "2026-07-09"
   },
   {
    "id": "audi-q3-ibrida-1498-110kw",
@@ -7011,7 +7033,7 @@
    "id": "audi-q3-plugin-x-200kw",
    "marca": "Audi",
    "modello": "Q3",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "e-hybrid 200 kW Business Advanced",
    "motore": "e-hybrid 200 kW 272 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -7019,9 +7041,9 @@
    "consumo_l100": 10.13,
    "consumo_kwh100": 16.7,
    "prezzo_listino_eur": 54600,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/q3/versioni",
+   "fonte_prezzo": "https://www.autoscout24.it/informare/novita/audi-q3-my27-piu-tecnologia-e-comfort-senza-aumenti-di-listino/",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -7036,7 +7058,8 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione termico da 180 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino: e-hybrid 200 kW 272 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino Audi Q3 MY27 valido dal 09/07/2026 (Business 52.000, S line 56.800)",
+   "data_prezzo": "2026-07-09"
   },
   {
    "id": "bmw-x1-diesel-1995-110kw",
@@ -7073,17 +7096,17 @@
    "id": "bmw-x1-elettrica-x-150kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "xLine / M Sport",
+   "allestimento": "iX1 eDrive20",
    "motore": "elettrico 204 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV premium",
    "potenza_kw": 150,
    "consumo_kwh100": 16.1,
    "veicoli_eea": 2693,
-   "prezzo_listino_eur": 52000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 47900,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "listino iX1 generico",
+   "fonte_prezzo": "https://autosupermarket.it/auto/bmw/x1",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -7096,13 +7119,15 @@
     "3": 0.45,
     "5": 0.37,
     "10": 0.16
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, c'è anche una Pure Edition a 43.100",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-benzina-1499-100kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line",
+   "allestimento": "sDrive18i X-Line (DCT)",
    "motore": "1.5 benzina 136 CV",
    "alimentazione": "benzina",
    "segmento": "SUV premium",
@@ -7110,10 +7135,10 @@
    "cilindrata_cc": 1499,
    "consumo_l100": 7.59,
    "veicoli_eea": 2243,
-   "prezzo_listino_eur": 42500,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 45400,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "listino BMW X1 sDrive18i",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7126,7 +7151,9 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026 (sDrive18i base 42.500 anche nel PDF ufficiale su bmw.it)",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-diesel-1995-110kw-2",
@@ -7163,7 +7190,7 @@
    "id": "bmw-x1-diesel-1995-145kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "xLine / M Sport",
+   "allestimento": "xDrive23d X-Line (DCT)",
    "motore": "2.0 diesel mild hybrid 197 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -7171,10 +7198,10 @@
    "cilindrata_cc": 1995,
    "consumo_l100": 6.14,
    "veicoli_eea": 1550,
-   "prezzo_listino_eur": 52000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 55800,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "listino iX1 generico",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7187,7 +7214,9 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 155 kW (211 CV) con il mild hybrid 48V",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-plugin-1499-100kw",
@@ -7227,7 +7256,7 @@
    "id": "bmw-x1-plugin-1499-92kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line",
+   "allestimento": "xDrive25e X-Line (DCT)",
    "motore": "1.5 Plug-in Hybrid 125 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -7237,10 +7266,10 @@
    "consumo_l100_reale_misto": 6.35,
    "consumo_kwh100": 17.2,
    "veicoli_eea": 749,
-   "prezzo_listino_eur": 42500,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 55300,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "listino BMW X1 sDrive18i",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7254,13 +7283,15 @@
     "5": 0.43,
     "10": 0.19
    },
-   "note_dati": "consumo a batteria scarica dalla versione termico da 100 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello"
+   "note_dati": "consumo a batteria scarica dalla versione termico da 100 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, potenza di sistema 180 kW (245 CV), i 92 kW sono del solo motore termico nei dati EEA, c'è anche una Special Edition X-Line a 46.900",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-ibrida-1998-150kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "xLine / M Sport",
+   "allestimento": "xDrive23i X-Line (DCT)",
    "motore": "2.0 Hybrid 204 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
@@ -7268,10 +7299,10 @@
    "cilindrata_cc": 1998,
    "consumo_l100": 7.91,
    "veicoli_eea": 724,
-   "prezzo_listino_eur": 52000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 53800,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "listino iX1 generico",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7284,7 +7315,9 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 160 kW (218 CV) con il mild hybrid 48V",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-diesel-1496-85kw",
@@ -7300,8 +7333,8 @@
    "veicoli_eea": 610,
    "prezzo_listino_eur": 45000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7314,7 +7347,8 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "la sDrive16d (1.5 diesel 116 CV) non è più nel listino 2026"
   },
   {
    "id": "bmw-x1-ibrida-1499-115kw",
@@ -7385,17 +7419,17 @@
    "id": "bmw-x1-elettrica-x-225kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
+   "allestimento": "iX1 xDrive30",
    "motore": "elettrico 306 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV premium",
    "potenza_kw": 225,
    "consumo_kwh100": 17.3,
    "veicoli_eea": 303,
-   "prezzo_listino_eur": 55000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 58800,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://autosupermarket.it/auto/bmw/x1",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -7408,7 +7442,9 @@
     "3": 0.45,
     "5": 0.37,
     "10": 0.16
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, nel listino 2026 la xDrive30 ha 230 kW (313 CV)",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-diesel-1995-140kw",
@@ -7424,8 +7460,8 @@
    "veicoli_eea": 189,
    "prezzo_listino_eur": 52000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "listino iX1 generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7438,13 +7474,14 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "2.0 diesel 140 kW (190 CV) della generazione precedente (F48), nel listino 2026 i diesel 2.0 sono da 120 kW (20d) e 155 kW (23d)"
   },
   {
    "id": "bmw-x1-benzina-1998-221kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
+   "allestimento": "M35i xDrive",
    "motore": "2.0 benzina 300 CV",
    "alimentazione": "benzina",
    "segmento": "SUV premium",
@@ -7452,10 +7489,10 @@
    "cilindrata_cc": 1998,
    "consumo_l100": 10.03,
    "veicoli_eea": 146,
-   "prezzo_listino_eur": 52000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 63800,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7468,7 +7505,9 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-x1-benzina-1998-131kw",
@@ -7484,8 +7523,8 @@
    "veicoli_eea": 50,
    "prezzo_listino_eur": 45000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7498,13 +7537,14 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "2.0 benzina 131 kW (178 CV) della generazione precedente (F48), oggi c'è la sDrive20i 1.5 da 125 kW (170 CV)"
   },
   {
    "id": "mercedes-benz-gla-diesel-1950-110kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "200 d Executive (automatico)",
+   "allestimento": "GLA 200 d Executive",
    "motore": "1.95 diesel 150 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -7513,9 +7553,9 @@
    "consumo_l100": 6.35,
    "veicoli_eea": 18570,
    "prezzo_listino_eur": 46667,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7529,13 +7569,14 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: 1.95 diesel 150 CV; idem; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026, autosupermarket.it riporta 30 € in meno, la nuova GLA ibrida è attesa nel 2027",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-diesel-1950-85kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "180 d Executive (automatico)",
+   "allestimento": "GLA 180 d Executive",
    "motore": "1.95 diesel 116 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -7544,9 +7585,9 @@
    "consumo_l100": 6.06,
    "veicoli_eea": 6859,
    "prezzo_listino_eur": 44959,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7560,7 +7601,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: 1.95 diesel 116 CV; idem; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-plugin-1332-118kw",
@@ -7600,7 +7642,7 @@
    "id": "mercedes-benz-gla-ibrida-1332-100kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "180 Executive (automatico)",
+   "allestimento": "GLA 180 Executive",
    "motore": "1.3 turbo 136 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
@@ -7609,9 +7651,9 @@
    "consumo_l100": 7.58,
    "veicoli_eea": 1444,
    "prezzo_listino_eur": 43800,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7625,13 +7667,14 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: 1.3 turbo 136 CV; patentati senza data. Probabile gamma precedente a combustione (articolo motor1 dice ibrida full solo dal 2027). Disponibilità attuale non v; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-plugin-1332-120kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "250 e Plug-in Executive (automatico)",
+   "allestimento": "GLA 250 e Plug-in Executive",
    "motore": "1.3 turbo plug-in 218 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -7642,9 +7685,9 @@
    "consumo_kwh100": 18.6,
    "veicoli_eea": 1383,
    "prezzo_listino_eur": 53255,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7659,7 +7702,8 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 120 kW dello stesso modello; kWh/100 km: media del segmento",
-   "nota_listino": "listino: 1.3 turbo plug-in 218 CV; idem; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026, 160 kW (218 CV) di sistema",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-benzina-1332-100kw",
@@ -7696,7 +7740,7 @@
    "id": "mercedes-benz-gla-diesel-1950-140kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "220 d 4M Executive (automatico)",
+   "allestimento": "GLA 220 d 4MATIC Executive",
    "motore": "1.95 diesel 190 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -7705,9 +7749,9 @@
    "consumo_l100": 6.74,
    "veicoli_eea": 985,
    "prezzo_listino_eur": 55451,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7721,7 +7765,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: 1.95 diesel 190 CV; idem. Trazione integrale; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-benzina-1332-120kw",
@@ -7758,7 +7803,7 @@
    "id": "mercedes-benz-gla-ibrida-1332-120kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "200 Executive (automatico)",
+   "allestimento": "GLA 200 Executive",
    "motore": "1.3 turbo 163 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
@@ -7767,9 +7812,9 @@
    "consumo_l100": 7.75,
    "veicoli_eea": 449,
    "prezzo_listino_eur": 48131,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7783,7 +7828,8 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: 1.3 turbo 163 CV; idem; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-benzina-1991-165kw",
@@ -7820,7 +7866,7 @@
    "id": "mercedes-benz-gla-ibrida-1991-165kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "250 4M Progressive Advanced (automatico)",
+   "allestimento": "GLA 250 4MATIC Progressive Advanced",
    "motore": "2.0 turbo 224 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
@@ -7829,9 +7875,9 @@
    "consumo_l100": 8.94,
    "veicoli_eea": 296,
    "prezzo_listino_eur": 57147,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7845,20 +7891,21 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: 2.0 turbo 224 CV; idem; fonte senza data"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "mercedes-benz-gla-elettrica-x-165kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "200 Advanced",
+   "allestimento": "nuova GLA 200 Advanced (elettrica)",
    "motore": "elettrico 165 kW 224 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV premium",
    "potenza_kw": 165,
    "consumo_kwh100": 16.7,
    "prezzo_listino_eur": 50156,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://it.motor1.com/news/803224/mercedes-gla-2026-prezzo-elettrica/",
    "piano_tagliandi": {
@@ -7875,20 +7922,21 @@
     "10": 0.16
    },
    "note_dati": "kWh/100 km: media del segmento",
-   "nota_listino": "listino: elettrico 165 kW 224 CV; idem; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino della nuova GLA elettrica, ordinabile da fine luglio 2026, Executive 46.972",
+   "data_prezzo": "2026-07-30"
   },
   {
    "id": "mercedes-benz-gla-elettrica-x-200kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "250+ Advanced",
+   "allestimento": "nuova GLA 250+ Advanced (elettrica)",
    "motore": "elettrico 200 kW 272 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV premium",
    "potenza_kw": 200,
    "consumo_kwh100": 16.7,
    "prezzo_listino_eur": 55890,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
    "fonte_prezzo": "https://it.motor1.com/news/803224/mercedes-gla-2026-prezzo-elettrica/",
    "piano_tagliandi": {
@@ -7905,22 +7953,23 @@
     "10": 0.16
    },
    "note_dati": "kWh/100 km: media del segmento",
-   "nota_listino": "listino: elettrico 200 kW 272 CV; idem; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino della nuova GLA elettrica, ordinabile da fine luglio 2026, Executive 52.706",
+   "data_prezzo": "2026-07-30"
   },
   {
    "id": "mercedes-benz-gla-ibrida-x-225kw",
    "marca": "Mercedes-Benz",
    "modello": "GLA",
-   "allestimento": "AMG GLA 35 4M Advanced Plus AMG (automatico)",
+   "allestimento": "Mercedes-AMG GLA 35 4MATIC Advanced Plus",
    "motore": "2.0 turbo 306 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
    "potenza_kw": 225,
    "consumo_l100": 8.94,
    "prezzo_listino_eur": 67163,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla/gla-200-d-amg-line-adv-plus/configuratore.html",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Mercedes-Benz/classe-gla.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7935,23 +7984,24 @@
     "10": 0.24
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (165 kW)",
-   "nota_listino": "listino: 2.0 turbo 306 CV; idem; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "GLA attuale (H247), listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "tesla-model-3-elettrica-x-208kw",
    "marca": "Tesla",
    "modello": "Model 3",
-   "allestimento": "Standard",
+   "allestimento": "Model 3 trazione posteriore (ex Standard)",
    "motore": "elettrico RWD 283 CV",
    "alimentazione": "elettrica",
    "segmento": "berlina elettrica",
    "potenza_kw": 208,
    "consumo_kwh100": 13.8,
    "veicoli_eea": 4783,
-   "prezzo_listino_eur": 36990,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 37970,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/tesla-model-3-standard-premium-performance-versioni-prezzi/",
+   "fonte_prezzo": "https://www.quattroruote.it/auto/tesla/model-3/model-3-rwd-143207202602",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -7965,25 +8015,25 @@
     "5": 0.38,
     "10": 0.16
    },
-   "data_prezzo": "2025-12-06",
+   "data_prezzo": "2026-11-18",
    "note_dati": "potenza dalla scheda alvolante.it (208 kW, 282,8 CV)",
-   "nota_listino": "listino: elettrico RWD 279 CV; prezzo hdmotori. CV da patentati (versione 62.5 kWh RWD, abbinamento dedotto). Patentati (senza data) riporta 37970. Prezzo possibile non ag; fonte del 2025-12-06, da ricontrollare"
+   "nota_listino": "prezzo chiavi in mano (esclusa IPT) su quattroruote.it, il listino Tesla di 36.990 non comprende circa 980 € di consegna e immatricolazione"
   },
   {
    "id": "tesla-model-3-elettrica-x-235kw",
    "marca": "Tesla",
    "modello": "Model 3",
-   "allestimento": "Premium Long Range RWD",
+   "allestimento": "Model 3 Premium Long Range trazione posteriore",
    "motore": "elettrico RWD 304 CV",
    "alimentazione": "elettrica",
    "segmento": "berlina elettrica",
    "potenza_kw": 235,
    "consumo_kwh100": 12.5,
    "veicoli_eea": 1457,
-   "prezzo_listino_eur": 42690,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 43670,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/tesla-model-3-standard-premium-performance-versioni-prezzi/",
+   "fonte_prezzo": "https://v2charge.com/it/confronto-modelli-tesla/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -7997,8 +8047,8 @@
     "5": 0.38,
     "10": 0.16
    },
-   "data_prezzo": "2025-12-06",
-   "nota_listino": "listino: elettrico RWD 304 CV; CV da patentati.it. Patentati (senza data) riporta 43670; fonte del 2025-12-06, da ricontrollare"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "listino Tesla 42.690 (aggiornato a novembre 2026) più circa 980 € di consegna e immatricolazione, come sulla trazione posteriore (37.970 chiavi in mano)"
   },
   {
    "id": "tesla-model-3-elettrica-x-366kw",
@@ -8064,16 +8114,16 @@
    "id": "tesla-model-y-elettrica-x-220kw",
    "marca": "Tesla",
    "modello": "Model Y",
-   "allestimento": "Standard",
+   "allestimento": "Model Y trazione posteriore (ex Standard)",
    "motore": "elettrico RWD 299 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV elettrico",
    "potenza_kw": 220,
    "consumo_kwh100": 13.1,
-   "prezzo_listino_eur": 39990,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 41970,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/tesla-model-y-standard-premium-performance-autonomia-prezzi/",
+   "fonte_prezzo": "https://www.drivek.it/tesla/model-y/versioni/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -8087,25 +8137,25 @@
     "5": 0.38,
     "10": 0.16
    },
-   "data_prezzo": "2025-10-11",
+   "data_prezzo": "2026-11-18",
    "note_dati": "potenza e consumo WLTP dalla scheda alvolante.it (220 kW, 13,1 kWh/100 km): i dati EEA abbinati erano della Long Range a trazione integrale",
-   "nota_listino": "listino: elettrico; CV non indicati in fonte. Prezzo possibile non aggiornato a novembre 2026; fonte del 2025-10-11, da ricontrollare"
+   "nota_listino": "prezzo con consegna (uguale al prezzo di partenza su quattroruote.it), a febbraio 2026 il listino Tesla era 39.990 senza consegna"
   },
   {
    "id": "tesla-model-y-elettrica-x-220kw-2",
    "marca": "Tesla",
    "modello": "Model Y",
-   "allestimento": "Premium trazione posteriore",
+   "allestimento": "Model Y Premium Long Range trazione posteriore",
    "motore": "elettrico RWD 299 CV",
    "alimentazione": "elettrica",
    "segmento": "SUV elettrico",
    "potenza_kw": 220,
    "consumo_kwh100": 13.9,
    "veicoli_eea": 2093,
-   "prezzo_listino_eur": 49990,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 51970,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.hdmotori.it/tesla-model-y-standard-premium-performance-autonomia-prezzi/",
+   "fonte_prezzo": "https://www.drivek.it/tesla/model-y/versioni/",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -8119,8 +8169,8 @@
     "5": 0.38,
     "10": 0.16
    },
-   "data_prezzo": "2025-10-11",
-   "nota_listino": "listino: elettrico RWD; CV non indicati; fonte del 2025-10-11, da ricontrollare"
+   "data_prezzo": "2026-11-18",
+   "nota_listino": "prezzo con consegna, Premium Long Range a trazione integrale 54.970"
   },
   {
    "id": "tesla-model-y-elettrica-x-255kw",
@@ -8246,7 +8296,7 @@
    "id": "skoda-octavia-wagon-diesel-1968-110kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Executive (DSG automatico)",
+   "allestimento": "2.0 TDI 150 CV Executive DSG",
    "motore": "2.0 TDI 150 CV",
    "alimentazione": "diesel",
    "segmento": "station wagon",
@@ -8255,9 +8305,9 @@
    "consumo_l100": 5.65,
    "veicoli_eea": 36,
    "prezzo_listino_eur": 39300,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8271,22 +8321,23 @@
     "5": 0.48,
     "10": 0.23
    },
-   "nota_listino": "listino: 2.0 TDI 150 CV 150 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-benzina-x-85kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Selection (manuale)",
+   "allestimento": "1.5 TSI 116 CV Selection (manuale)",
    "motore": "1.5 TSI 116 CV",
    "alimentazione": "benzina",
    "segmento": "station wagon",
    "potenza_kw": 85,
    "consumo_l100": 6.67,
    "prezzo_listino_eur": 30550,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8301,22 +8352,23 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato da Volkswagen T-Cross con motore di pari potenza (85 kW)",
-   "nota_listino": "listino: 1.5 TSI 116 CV 116 CV; prezzi uguali su alvolante.it/listino_auto/skoda-octavia_wagon (metadata pagina 2025-01-03, non data listino). Il cambio manuale è indicato ; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-benzina-x-110kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Executive (manuale)",
+   "allestimento": "1.5 TSI 150 CV Executive (manuale)",
    "motore": "1.5 TSI 150 CV",
    "alimentazione": "benzina",
    "segmento": "station wagon",
    "potenza_kw": 110,
    "consumo_l100": 7.17,
    "prezzo_listino_eur": 35150,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8331,22 +8383,23 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato da Volkswagen T-Roc con motore di pari potenza (110 kW)",
-   "nota_listino": "listino: 1.5 TSI 150 CV 150 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-benzina-x-195kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "RS (DSG automatico)",
+   "allestimento": "RS 2.0 TSI 265 CV DSG",
    "motore": "2.0 TSI 265 CV",
    "alimentazione": "benzina",
    "segmento": "station wagon",
    "potenza_kw": 195,
    "consumo_l100": 9.23,
    "prezzo_listino_eur": 48150,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8361,22 +8414,23 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato da Volkswagen Golf con motore simile (180 kW)",
-   "nota_listino": "listino: 2.0 TSI 265 CV 265 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-diesel-x-85kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Executive (manuale)",
+   "allestimento": "2.0 TDI 115 CV Executive (manuale)",
    "motore": "2.0 TDI 116 CV",
    "alimentazione": "diesel",
    "segmento": "station wagon",
    "potenza_kw": 85,
    "consumo_l100": 5.65,
    "prezzo_listino_eur": 36300,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8391,22 +8445,23 @@
     "10": 0.23
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (110 kW)",
-   "nota_listino": "listino: 2.0 TDI 116 CV 116 CV; drivek indica 115 CV (85 kW), alvolante 116 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-ibrida-x-85kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Executive (DSG automatico)",
+   "allestimento": "1.5 TSI m-HEV 116 CV Executive DSG",
    "motore": "1.5 TSI m-HEV 116 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon",
    "potenza_kw": 85,
    "consumo_l100": 6.27,
    "prezzo_listino_eur": 34650,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8421,22 +8476,23 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato da Volkswagen Golf con motore di pari potenza (85 kW)",
-   "nota_listino": "listino: 1.5 TSI m-HEV 116 CV 116 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-octavia-wagon-ibrida-x-110kw",
    "marca": "Skoda",
    "modello": "Octavia Wagon",
-   "allestimento": "Executive (DSG automatico)",
+   "allestimento": "1.5 TSI m-HEV 150 CV Executive DSG",
    "motore": "1.5 TSI m-HEV 150 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon",
    "potenza_kw": 110,
    "consumo_l100": 6.8,
    "prezzo_listino_eur": 37450,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/skoda/octavia-combi/versioni/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/octavia-wagon/1-0-tsi-executive.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8451,7 +8507,8 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato da Cupra Leon Sportstourer con motore di pari potenza (110 kW)",
-   "nota_listino": "listino: 1.5 TSI m-HEV 150 CV 150 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "ford-focus-sw-ibrida-999-92kw",
@@ -8739,7 +8796,7 @@
    "id": "peugeot-308-sw-diesel-1499-96kw",
    "marca": "Peugeot",
    "modello": "308 SW",
-   "allestimento": "Allure (automatico EAT8)",
+   "allestimento": "Allure BlueHDi 130 EAT8",
    "motore": "1.5 BlueHDi 130 EAT8 130 CV",
    "alimentazione": "diesel",
    "segmento": "station wagon",
@@ -8747,10 +8804,10 @@
    "cilindrata_cc": 1499,
    "consumo_l100": 5.37,
    "veicoli_eea": 1282,
-   "prezzo_listino_eur": 37020,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 37530,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/peugeot/308-sw/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/308-sw/active-pack-puretech-110-s-s.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8764,7 +8821,8 @@
     "5": 0.48,
     "10": 0.23
    },
-   "nota_listino": "listino: 1.5 BlueHDi 130 EAT8 130 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (a gennaio 2026 era 37.020)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "peugeot-308-sw-benzina-1199-96kw",
@@ -8835,7 +8893,7 @@
    "id": "peugeot-308-sw-plugin-1598-132kw",
    "marca": "Peugeot",
    "modello": "308 SW",
-   "allestimento": "Allure (automatico)",
+   "allestimento": "Allure Plug-in Hybrid 195 e-DCS7",
    "motore": "1.6 Plug-in Hybrid 195 CV",
    "alimentazione": "plugin",
    "segmento": "station wagon",
@@ -8845,10 +8903,10 @@
    "consumo_l100_reale_misto": 5.69,
    "consumo_kwh100": 17.7,
    "veicoli_eea": 41,
-   "prezzo_listino_eur": 43445,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 43955,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/peugeot/308-sw/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/308-sw/allure-bluehdi-130-s-s.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8863,22 +8921,23 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica dalla versione termico da 96 kW dello stesso modello",
-   "nota_listino": "listino: 1.6 Plug-in Hybrid 195 195 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 144 kW (195 CV) di sistema",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "peugeot-308-sw-ibrida-x-107kw",
    "marca": "Peugeot",
    "modello": "308 SW",
-   "allestimento": "Business (automatico)",
+   "allestimento": "Business Hybrid 145 e-DCS6",
    "motore": "1.2 Hybrid 145 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon",
    "potenza_kw": 107,
    "consumo_l100": 6.97,
-   "prezzo_listino_eur": 35040,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 35550,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/peugeot/308-sw/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/308-sw/active-pack-puretech-110-s-s.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -8893,22 +8952,23 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (96 kW)",
-   "nota_listino": "listino: 1.2 Hybrid 145 145 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "peugeot-308-sw-elettrica-x-115kw",
    "marca": "Peugeot",
    "modello": "308 SW",
-   "allestimento": "Allure (automatico)",
+   "allestimento": "Allure (e-308 SW 156 CV, 58,3 kWh)",
    "motore": "elettrico 156 CV",
    "alimentazione": "elettrica",
    "segmento": "station wagon",
    "potenza_kw": 115,
    "consumo_kwh100": 15.1,
-   "prezzo_listino_eur": 40980,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 41200,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/magazine/in-vendita-nuove-peugeot-308-e-308-sw-i-prezzi-al-configuratore",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Peugeot/e-308-sw/sw-e-156-allure.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 2,
@@ -8923,7 +8983,8 @@
     "10": 0.16
    },
    "note_dati": "kWh/100 km: WLTP dichiarato",
-   "nota_listino": "listino: elettrico 156 CV 156 CV; articolo di lancio del settembre 2025 (data esatta non presente), potrebbe non essere aggiornato; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (uguale su alvolante.it)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "opel-astra-sports-tourer-ibrida-x-107kw",
@@ -9054,7 +9115,7 @@
    "id": "cupra-leon-sportstourer-diesel-1968-110kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "base (DSG 7 marce)",
+   "allestimento": "2.0 TDI 150 CV DSG",
    "motore": "2.0 TDI 150 CV",
    "alimentazione": "diesel",
    "segmento": "station wagon",
@@ -9062,10 +9123,10 @@
    "cilindrata_cc": 1968,
    "consumo_l100": 5.83,
    "veicoli_eea": 135,
-   "prezzo_listino_eur": 38900,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 39500,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9079,13 +9140,14 @@
     "5": 0.48,
     "10": 0.23
    },
-   "nota_listino": "listino: 2.0 TDI 150 CV 150 CV; listino MY2024 superato (vedi riga alvolante 2026-11-02 a 40800); fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (listino ufficiale di ottobre 2025: 38.900)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-plugin-1395-110kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "base (DSG 6 marce)",
+   "allestimento": "1.5 e-Hybrid 204 CV DSG",
    "motore": "1.5 e-Hybrid 204 CV",
    "alimentazione": "plugin",
    "segmento": "station wagon",
@@ -9095,10 +9157,10 @@
    "consumo_l100_reale_misto": 4.93,
    "consumo_kwh100": 15.9,
    "veicoli_eea": 132,
-   "prezzo_listino_eur": 44650,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 45100,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9113,13 +9175,14 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello",
-   "nota_listino": "listino: 1.5 e-Hybrid 204 CV 204 CV; listino MY2024 probabilmente superato; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 150 kW (204 CV) di sistema",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-ibrida-1498-110kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "base (DSG 7 marce)",
+   "allestimento": "1.5 Hybrid 150 CV DSG",
    "motore": "1.5 Hybrid 150 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon",
@@ -9127,10 +9190,10 @@
    "cilindrata_cc": 1498,
    "consumo_l100": 6.8,
    "veicoli_eea": 74,
-   "prezzo_listino_eur": 38400,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 38950,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9144,22 +9207,23 @@
     "5": 0.5,
     "10": 0.25
    },
-   "nota_listino": "listino: 1.5 Hybrid 150 CV 150 CV; listino MY2024 probabilmente superato; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-benzina-x-110kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "base (manuale 6 marce)",
+   "allestimento": "1.5 TSI 150 CV (manuale)",
    "motore": "1.5 TSI 150 CV",
    "alimentazione": "benzina",
    "segmento": "station wagon",
    "potenza_kw": 110,
    "consumo_l100": 6.8,
-   "prezzo_listino_eur": 34600,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 35150,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9174,23 +9238,24 @@
     "10": 0.25
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (110 kW)",
-   "nota_listino": "listino: 1.5 TSI 150 CV 150 CV; listino MY2024 probabilmente superato (il 2.0 TDI sulla stessa fonte è 38900 contro 40800 attuale); fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-plugin-x-200kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "VZ (DSG 6 marce)",
+   "allestimento": "VZ 1.5 e-Hybrid 272 CV DSG",
    "motore": "1.5 e-Hybrid 272 CV",
    "alimentazione": "plugin",
    "segmento": "station wagon",
    "potenza_kw": 200,
    "consumo_l100": 6.8,
    "consumo_kwh100": 15.9,
-   "prezzo_listino_eur": 50200,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 50700,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9205,23 +9270,24 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino: 1.5 e-Hybrid 272 CV 272 CV; listino MY2024 probabilmente superato; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-plugin-x-155kw",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "VZ Extreme (DSG 6 marce)",
+   "allestimento": "VZ Extreme 1.5 e-Hybrid 272 CV DSG",
    "motore": "1.5 e-Hybrid",
    "alimentazione": "plugin",
    "segmento": "station wagon",
    "potenza_kw": 155,
    "consumo_l100": 6.8,
    "consumo_kwh100": 15.9,
-   "prezzo_listino_eur": 56750,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 57000,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9236,22 +9302,23 @@
     "10": 0.2
    },
    "note_dati": "potenza non indicata nel listino: 155 kW stimati da un'altra versione; consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino: 1.5 e-Hybrid; listino MY2024 probabilmente superato. CV non indicati; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, la VZ Extreme plug-in ha 200 kW (272 CV) di sistema",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-leon-sportstourer-benzina-x-110kw-2",
    "marca": "Cupra",
    "modello": "Leon Sportstourer",
-   "allestimento": "VZ Extreme (DSG 7 marce)",
+   "allestimento": "VZ Extreme 2.0 TSI 333 CV 4Drive DSG",
    "motore": "2.0 TSI",
    "alimentazione": "benzina",
    "segmento": "station wagon",
-   "potenza_kw": 110,
+   "potenza_kw": 245,
    "consumo_l100": 6.8,
-   "prezzo_listino_eur": 60800,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 61500,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/listino-nuovo/cupra-leon-sportourer/1538-1007505/l/",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/leon-st.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9266,22 +9333,23 @@
     "10": 0.25
    },
    "note_dati": "potenza non indicata nel listino: 110 kW stimati da un'altra versione; consumo copiato dal motore EEA più simile dello stesso modello (110 kW)",
-   "nota_listino": "listino: 2.0 TSI; listino MY2024 probabilmente superato. CV non indicati; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, potenza corretta a 245 kW (333 CV) come da listino: la stima di 110 kW era sbagliata, consumo ancora stimato da un motore meno potente",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a5-avant-ibrida-x-110kw",
    "marca": "Audi",
    "modello": "A5 Avant",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "TFSI 110 kW S tronic Business Advanced",
    "motore": "2.0 TFSI 150 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon premium",
    "potenza_kw": 110,
    "consumo_l100": 6.93,
    "prezzo_listino_eur": 55850,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a5-avant/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a5-avant.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9296,22 +9364,23 @@
     "10": 0.24
    },
    "note_dati": "consumo copiato da Audi A3 con motore di pari potenza (110 kW)",
-   "nota_listino": "listino: 2.0 TFSI 150 CV 150 CV; fonte senza data; dati motore da listino (nessun dato EEA)"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a5-avant-ibrida-x-150kw",
    "marca": "Audi",
    "modello": "A5 Avant",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "TFSI 150 kW S tronic Business Advanced",
    "motore": "2.0 TFSI 204 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon premium",
    "potenza_kw": 150,
    "consumo_l100": 9.23,
    "prezzo_listino_eur": 62600,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a5-avant/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a5-avant.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9326,22 +9395,23 @@
     "10": 0.24
    },
    "note_dati": "consumo copiato da Audi Q5 con motore di pari potenza (150 kW)",
-   "nota_listino": "listino: 2.0 TFSI 204 CV 204 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "audi-a5-avant-diesel-x-150kw",
    "marca": "Audi",
    "modello": "A5 Avant",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "TDI 150 kW S tronic Business Advanced",
    "motore": "2.0 TDI 204 CV",
    "alimentazione": "diesel",
    "segmento": "station wagon premium",
    "potenza_kw": 150,
    "consumo_l100": 7.63,
    "prezzo_listino_eur": 63350,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/a5-avant/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/a5-avant.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9356,7 +9426,8 @@
     "10": 0.22
    },
    "note_dati": "consumo copiato da Audi Q3 con motore di pari potenza (147 kW)",
-   "nota_listino": "listino: 2.0 TDI 204 CV 204 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "volvo-v90-diesel-1969-145kw",
@@ -9424,7 +9495,7 @@
    "id": "volvo-v90-ibrida-1969-184kw",
    "marca": "Volvo",
    "modello": "V90",
-   "allestimento": "Plus Bright (automatico)",
+   "allestimento": "B4 Plus Bright (automatico)",
    "motore": "B4 250 CV",
    "alimentazione": "ibrida",
    "segmento": "station wagon premium",
@@ -9433,9 +9504,9 @@
    "consumo_l100": 9.02,
    "veicoli_eea": 66,
    "prezzo_listino_eur": 67200,
-   "affidabilita_prezzo": "datato",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.automoto.it/catalogo/volvo/v90/20-t6-phev-plus-bright-awd-auto/180238",
+   "affidabilita_prezzo": "stima",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.autosupermarket.it/auto/volvo/v90",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -9449,7 +9520,7 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: B4 (benzina mild hybrid) 2.0; stessa nota. CV non riportati; fonte senza data"
+   "nota_listino": "nel 2026 la V90 in Italia si trova soprattutto come km 0: il listino Volvo MY26 della V90 riguarda le plug-in T6 e T8, resta l'ultimo prezzo noto della B4 Plus Bright (hdmotori.it)"
   },
   {
    "id": "volvo-v90-plugin-1969-186kw",
@@ -9489,7 +9560,7 @@
    "id": "bmw-i5-touring-elettrica-x-250kw",
    "marca": "BMW",
    "modello": "i5 Touring",
-   "allestimento": "base (automatico)",
+   "allestimento": "i5 Touring eDrive40",
    "motore": "elettrico eDrive40 250 kW 340 CV",
    "alimentazione": "elettrica",
    "segmento": "station wagon elettrica",
@@ -9497,9 +9568,9 @@
    "consumo_kwh100": 16.9,
    "veicoli_eea": 100,
    "prezzo_listino_eur": 78000,
-   "affidabilita_prezzo": "datato",
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/bmw/i5-touring/versioni",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0439636IT/650597",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 2,
@@ -9513,7 +9584,8 @@
     "5": 0.38,
     "10": 0.16
    },
-   "nota_listino": "listino: eDrive40 250 kW 340 CV; prezzo base confermato da alvolante.it (pagina 2025-03-28). Dati drivek senza data (pagina listino 2026); fonte senza data"
+   "nota_listino": "listino ufficiale BMW Serie 5 / i5 Touring valido dal 28/05/2026 (M Sport Edition 81.350)",
+   "data_prezzo": "2026-05-28"
   },
   {
    "id": "bmw-i5-touring-elettrica-x-290kw",
@@ -9579,7 +9651,7 @@
    "id": "cupra-formentor-benzina-1498-110kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "Impulse (manuale)",
+   "allestimento": "1.5 TSI 150 CV (manuale)",
    "motore": "1.5 TSI 110 kW 150 CV",
    "alimentazione": "benzina",
    "segmento": "SUV medio",
@@ -9587,10 +9659,10 @@
    "cilindrata_cc": 1498,
    "consumo_l100": 7.91,
    "veicoli_eea": 3738,
-   "prezzo_listino_eur": 38700,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 37700,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9604,13 +9676,14 @@
     "5": 0.52,
     "10": 0.26
    },
-   "nota_listino": "listino: 1.5 TSI 110 kW 150 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, allestimento base (la Impulse non è nel listino consultato)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-formentor-plugin-1395-110kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "Impulse (DSG)",
+   "allestimento": "1.5 e-Hybrid 204 CV DSG",
    "motore": "1.5 e-Hybrid 150 kW 204 CV",
    "alimentazione": "plugin",
    "segmento": "SUV medio",
@@ -9620,10 +9693,10 @@
    "consumo_l100_reale_misto": 4.81,
    "consumo_kwh100": 16.8,
    "veicoli_eea": 2911,
-   "prezzo_listino_eur": 48500,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 46900,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9638,13 +9711,14 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica dalla versione ibrida da 110 kW dello stesso modello",
-   "nota_listino": "listino: 1.5 e-Hybrid 150 kW 204 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, 150 kW (204 CV) di sistema",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-formentor-diesel-1968-110kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "Impulse (DSG)",
+   "allestimento": "2.0 TDI 150 CV DSG",
    "motore": "2.0 TDI 110 kW 150 CV",
    "alimentazione": "diesel",
    "segmento": "SUV medio",
@@ -9652,10 +9726,10 @@
    "cilindrata_cc": 1968,
    "consumo_l100": 6.67,
    "veicoli_eea": 2666,
-   "prezzo_listino_eur": 43300,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 42300,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9669,7 +9743,8 @@
     "5": 0.49,
     "10": 0.23
    },
-   "nota_listino": "listino: 2.0 TDI 110 kW 150 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-formentor-benzina-1984-140kw",
@@ -9737,7 +9812,7 @@
    "id": "cupra-formentor-benzina-1984-180kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "VZ (DSG)",
+   "allestimento": "VZ 2.0 TSI 265 CV DSG",
    "motore": "2.0 TSI 195 kW 265 CV",
    "alimentazione": "benzina",
    "segmento": "SUV medio",
@@ -9745,10 +9820,10 @@
    "cilindrata_cc": 1984,
    "consumo_l100": 9.71,
    "veicoli_eea": 224,
-   "prezzo_listino_eur": 52100,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 52800,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9762,7 +9837,8 @@
     "5": 0.52,
     "10": 0.26
    },
-   "nota_listino": "listino: 2.0 TSI 195 kW 265 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, nel listino 195 kW (265 CV), i dati EEA sono della versione precedente da 180 kW",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-formentor-benzina-2480-287kw",
@@ -9799,7 +9875,7 @@
    "id": "cupra-formentor-ibrida-1498-110kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "Impulse (DSG)",
+   "allestimento": "1.5 Hybrid 150 CV DSG",
    "motore": "1.5 Hybrid 110 kW 150 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV medio",
@@ -9807,10 +9883,10 @@
    "cilindrata_cc": 1498,
    "consumo_l100": 7.39,
    "veicoli_eea": 64,
-   "prezzo_listino_eur": 42700,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 41400,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9824,23 +9900,24 @@
     "5": 0.52,
     "10": 0.26
    },
-   "nota_listino": "listino: 1.5 Hybrid 110 kW 150 CV; tipo ibrido non specificato; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "cupra-formentor-plugin-x-200kw",
    "marca": "Cupra",
    "modello": "Formentor",
-   "allestimento": "Impulse (DSG)",
+   "allestimento": "VZ 1.5 e-Hybrid 272 CV DSG",
    "motore": "1.5 e-Hybrid 200 kW 272 CV",
    "alimentazione": "plugin",
    "segmento": "SUV medio",
    "potenza_kw": 200,
    "consumo_l100": 9.71,
    "consumo_kwh100": 16.8,
-   "prezzo_listino_eur": 59450,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 56150,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/cupra/formentor/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Cupra/formentor.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -9855,7 +9932,8 @@
     "10": 0.2
    },
    "note_dati": "consumo a batteria scarica dalla versione termico da 180 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino: 1.5 e-Hybrid 200 kW 272 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "ford-kuga-ibrida-2488-112kw",
@@ -10207,16 +10285,16 @@
    "id": "skoda-kamiq-benzina-x-70kw",
    "marca": "Skoda",
    "modello": "Kamiq",
-   "allestimento": "Your Way (manuale)",
+   "allestimento": "Your Way 1.0 TSI 95 CV (manuale)",
    "motore": "1.0 TSI 95 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
    "potenza_kw": 70,
    "consumo_l100": 6.39,
-   "prezzo_listino_eur": 26950,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 27150,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/magazine/skoda-kamiq-your-way-e-be-more-prezzi-e-caratteristiche",
+   "fonte_prezzo": "https://autosupermarket.it/marchi/skoda/kamiq",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10231,22 +10309,23 @@
     "10": 0.26
    },
    "note_dati": "consumo copiato da Volkswagen T-Cross con motore di pari potenza (70 kW)",
-   "nota_listino": "listino: 1.0 TSI 95 CV; fonte senza data; dati motore da listino (nessun dato EEA)"
+   "nota_listino": "listino 2026 (uguale su patentati.it), Selection 25.500",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-kamiq-benzina-x-85kw",
    "marca": "Skoda",
    "modello": "Kamiq",
-   "allestimento": "130 Edition (manuale)",
+   "allestimento": "Your Way 1.0 TSI 115 CV (manuale)",
    "motore": "1.0 TSI 115 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
    "potenza_kw": 85,
    "consumo_l100": 6.67,
-   "prezzo_listino_eur": 29550,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 28450,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/magazine/skoda-kamiq-your-way-e-be-more-prezzi-e-caratteristiche",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/kamiq/1-0-tsi-95cv-ambition/configuratore.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10261,22 +10340,23 @@
     "10": 0.26
    },
    "note_dati": "consumo copiato da Volkswagen T-Cross con motore di pari potenza (85 kW)",
-   "nota_listino": "listino: 1.0 TSI 115 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, l'allestimento 130 Edition non è più a listino",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "skoda-kamiq-benzina-x-110kw",
    "marca": "Skoda",
    "modello": "Kamiq",
-   "allestimento": "130 Edition (manuale)",
+   "allestimento": "Your Way 1.5 TSI ACT 150 CV (manuale)",
    "motore": "1.5 TSI ACT 150 CV",
    "alimentazione": "benzina",
    "segmento": "SUV compatto",
    "potenza_kw": 110,
    "consumo_l100": 7.17,
-   "prezzo_listino_eur": 31100,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 30000,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.motorbox.com/auto/magazine/skoda-kamiq-your-way-e-be-more-prezzi-e-caratteristiche",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Skoda/kamiq/1-0-tsi-115cv-montecarlo.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10291,13 +10371,14 @@
     "10": 0.26
    },
    "note_dati": "consumo copiato da Volkswagen T-Roc con motore di pari potenza (110 kW)",
-   "nota_listino": "listino: 1.5 TSI ACT 150 CV; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026, l'allestimento 130 Edition non è più a listino",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "alfa-romeo-tonale-diesel-1598-96kw",
    "marca": "Alfa Romeo",
    "modello": "Tonale",
-   "allestimento": "Ti (automatico)",
+   "allestimento": "Ti 1.6 Diesel 130 CV TCT6",
    "motore": "1.6 Diesel 96 kW 130 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -10305,10 +10386,10 @@
    "cilindrata_cc": 1598,
    "consumo_l100": 6.35,
    "veicoli_eea": 6400,
-   "prezzo_listino_eur": 44100,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 44950,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/alfa-romeo/tonale/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Alfa-Romeo/tonale/1-5-160cv-hybrid-tct7-ti.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10322,7 +10403,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "nota_listino": "listino: 1.6 Diesel 96 kW 130 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (al lancio di ottobre 2025 era 44.100)",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "alfa-romeo-tonale-ibrida-1469-96kw",
@@ -10359,7 +10441,7 @@
    "id": "alfa-romeo-tonale-ibrida-1469-117kw",
    "marca": "Alfa Romeo",
    "modello": "Tonale",
-   "allestimento": "Ti (automatico)",
+   "allestimento": "Ti 1.5 Hybrid 175 CV TCT7",
    "motore": "1.5 Hybrid 128 kW 175 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
@@ -10367,10 +10449,10 @@
    "cilindrata_cc": 1469,
    "consumo_l100": 7.18,
    "veicoli_eea": 5600,
-   "prezzo_listino_eur": 45900,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 46750,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/alfa-romeo/tonale/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Alfa-Romeo/tonale/1-5-160cv-hybrid-tct7-ti.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10384,7 +10466,8 @@
     "5": 0.49,
     "10": 0.24
    },
-   "nota_listino": "listino: 1.5 Hybrid 128 kW 175 CV; fonte senza data"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (al lancio 45.900), dal restyling 128 kW (175 CV) contando anche il motore elettrico",
+   "data_prezzo": "2026-11-18"
   },
   {
    "id": "alfa-romeo-tonale-plugin-1332-132kw",
@@ -10434,8 +10517,8 @@
    "veicoli_eea": 5728,
    "prezzo_listino_eur": 62000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10448,13 +10531,14 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "xDrive20d 190 CV della X3 precedente (G01), la nuova (G45) ha 145 kW (197 CV)"
   },
   {
    "id": "bmw-x3-plugin-1998-135kw",
    "marca": "BMW",
    "modello": "X3",
-   "allestimento": "xLine / M Sport",
+   "allestimento": "xDrive30e",
    "motore": "2.0 Plug-in Hybrid 184 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -10464,10 +10548,10 @@
    "consumo_l100_reale_misto": 7.81,
    "consumo_kwh100": 19.1,
    "veicoli_eea": 753,
-   "prezzo_listino_eur": 70000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 71500,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10481,7 +10565,9 @@
     "5": 0.43,
     "10": 0.19
    },
-   "note_dati": "consumo a batteria scarica dalla versione ibrida da 135 kW dello stesso modello"
+   "note_dati": "consumo a batteria scarica dalla versione ibrida da 135 kW dello stesso modello",
+   "nota_listino": "listino ufficiale BMW X3 (G45) valido dal 12/11/2025, potenza di sistema 220 kW (299 CV), i 135 kW dei dati EEA sono del motore termico",
+   "data_prezzo": "2025-11-12"
   },
   {
    "id": "bmw-x3-diesel-1995-110kw",
@@ -10497,8 +10583,8 @@
    "veicoli_eea": 399,
    "prezzo_listino_eur": 62000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10511,7 +10597,8 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "sDrive18d 150 CV della X3 precedente (G01): nella nuova X3 non c'è"
   },
   {
    "id": "bmw-x3-diesel-2993-183kw",
@@ -10527,8 +10614,8 @@
    "veicoli_eea": 357,
    "prezzo_listino_eur": 62000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10541,7 +10628,8 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "3.0 diesel 249 CV della X3 precedente (G01), oggi c'è la xDrive40d da 223 kW (303 CV) a 75.900"
   },
   {
    "id": "bmw-x3-diesel-2993-210kw",
@@ -10557,8 +10645,8 @@
    "veicoli_eea": 198,
    "prezzo_listino_eur": 75000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10571,13 +10659,14 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "xDrive30d 286 CV della X3 precedente (G01), oggi c'è la xDrive40d da 223 kW (303 CV) a 75.900"
   },
   {
    "id": "bmw-x3-diesel-1995-145kw",
    "marca": "BMW",
    "modello": "X3",
-   "allestimento": "xLine / M Sport",
+   "allestimento": "xDrive20d",
    "motore": "2.0 diesel mild hybrid 197 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -10585,10 +10674,10 @@
    "cilindrata_cc": 1995,
    "consumo_l100": 7.34,
    "veicoli_eea": 190,
-   "prezzo_listino_eur": 62000,
-   "affidabilita_prezzo": "stima",
+   "prezzo_listino_eur": 67900,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10601,7 +10690,9 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "listino ufficiale BMW X3 (G45) valido dal 12/11/2025 per la produzione 2026, stesso prezzo su patentati.it e autosupermarket.it, MSport 71.900",
+   "data_prezzo": "2025-11-12"
   },
   {
    "id": "bmw-x3-diesel-2993-250kw",
@@ -10617,8 +10708,8 @@
    "veicoli_eea": 188,
    "prezzo_listino_eur": 75000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10631,7 +10722,8 @@
     "3": 0.57,
     "5": 0.47,
     "10": 0.22
-   }
+   },
+   "nota_listino": "M40d 340 CV della X3 precedente (G01): nella nuova X3 non c'è"
   },
   {
    "id": "bmw-x3-ibrida-1998-135kw",
@@ -10647,8 +10739,8 @@
    "veicoli_eea": 138,
    "prezzo_listino_eur": 62000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10661,7 +10753,8 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "xDrive20i 184 CV della X3 precedente (G01), oggi c'è la xDrive20 da 153 kW (208 CV) a 66.200"
   },
   {
    "id": "bmw-x3-ibrida-1998-180kw",
@@ -10677,8 +10770,8 @@
    "veicoli_eea": 38,
    "prezzo_listino_eur": 62000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10691,7 +10784,8 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "xDrive30i 245 CV della X3 precedente (G01): nella nuova X3 non c'è"
   },
   {
    "id": "bmw-x3-ibrida-2998-265kw",
@@ -10707,8 +10801,8 @@
    "veicoli_eea": 38,
    "prezzo_listino_eur": 75000,
    "affidabilita_prezzo": "stima",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "stima listino Italia Ottobre 2026 / generico",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -10721,7 +10815,8 @@
     "3": 0.6,
     "5": 0.49,
     "10": 0.24
-   }
+   },
+   "nota_listino": "M40i 360 CV della X3 precedente (G01), oggi c'è la M50 da 293 kW (398 CV) a 92.300"
   },
   {
    "id": "audi-q5-diesel-1968-150kw",
@@ -10916,16 +11011,16 @@
    "id": "audi-q5-benzina-x-150kw",
    "marca": "Audi",
    "modello": "Q5",
-   "allestimento": "Business Advanced (S tronic)",
+   "allestimento": "TFSI 150 kW S tronic Business Advanced (trazione anteriore)",
    "motore": "TFSI 150 kW 204 CV",
    "alimentazione": "benzina",
    "segmento": "SUV premium",
    "potenza_kw": 150,
    "consumo_l100": 9.23,
-   "prezzo_listino_eur": 67450,
-   "affidabilita_prezzo": "datato",
+   "prezzo_listino_eur": 67950,
+   "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.drivek.it/audi/q5/versioni",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/Audi/q5/30-tdi-sport-s-tronic.html",
    "piano_tagliandi": {
     "intervallo_km": 15000,
     "intervallo_anni": 1,
@@ -10940,7 +11035,8 @@
     "10": 0.24
    },
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (150 kW)",
-   "nota_listino": "listino: TFSI 150 kW 204 CV; trazione anteriore; fonte senza data; riga aggiunta dal listino; consumo non nel dataset"
+   "nota_listino": "listino 2026 consultato il 18/11/2026 (una pagina più vecchia dello stesso sito riporta 67.450)",
+   "data_prezzo": "2026-11-18"
   }
  ]
 }
