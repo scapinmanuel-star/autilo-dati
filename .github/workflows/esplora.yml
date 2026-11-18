@@ -8,73 +8,45 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Raggiungibilità
+      - name: Altri indirizzi MIMIT/MASE
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          for u in https://www.mimit.gov.it/ https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv \
-                   https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en https://sisen.mase.gov.it/ ; do
+          for u in https://www.mise.gov.it/images/exportCSV/prezzo_alle_8.csv \
+                   https://carburanti.mise.gov.it/ospzSearch/ \
+                   https://carburanti.mise.gov.it/ospzApi/search/zone \
+                   https://sisen.mase.gov.it/dgsaie/prezzi-settimanali-carburanti ; do
             curl -sS -L -I -A "$UA" --connect-timeout 15 -m 40 -o /dev/null \
-              -w "$u -> HTTP %{http_code} ip=%{remote_ip} t_connect=%{time_connect} t_tot=%{time_total}\n" "$u" || echo "$u -> ERRORE $?"
+              -w "$u -> HTTP %{http_code} ip=%{remote_ip} t_tot=%{time_total}\n" "$u" || echo "$u -> ERRORE $?"
           done
-      - name: File giornalieri MIMIT
-        continue-on-error: true
+          echo "--- IPv6 mimit"
+          curl -sS -6 -I --connect-timeout 15 -m 30 -o /dev/null -w "HTTP %{http_code}\n" https://www.mimit.gov.it/ || echo "ERRORE $?"
+          echo "--- DNS mimit"
+          getent ahosts www.mimit.gov.it | head -4
+      - name: Medie Italia dal Weekly Oil Bulletin
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          for f in prezzo_alle_8.csv anagrafica_impianti_attivi.csv; do
-            echo "===== $f"
-            curl -sS -L -A "$UA" --connect-timeout 20 -m 240 -o "$f" \
-              -w "HTTP %{http_code} %{size_download} byte %{content_type} in %{time_total}s\n" \
-              "https://www.mimit.gov.it/images/exportCSV/$f" || echo "ERRORE $?"
-            head -c 900 "$f"; echo
-            echo "righe: $(wc -l < "$f")"
-          done
-          echo "===== carburanti (prime 40 per frequenza)"
-          tail -n +3 prezzo_alle_8.csv | awk -F'|' '{print $2" | self="$4}' | sort | uniq -c | sort -rn | head -40
-          echo "===== tipi impianto"
-          tail -n +3 anagrafica_impianti_attivi.csv | awk -F'|' '{print $4}' | sort | uniq -c | sort -rn | head
-          echo "===== date dtComu (le 12 più frequenti)"
-          tail -n +3 prezzo_alle_8.csv | awk -F'|' '{print substr($5,1,10)}' | sort | uniq -c | sort -rn | head -12
-      - name: Weekly Oil Bulletin (UE)
-        continue-on-error: true
-        run: |
-          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          curl -sS -L -A "$UA" --connect-timeout 20 -m 60 -o wob.html \
-            "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en" -w "HTTP %{http_code}\n" || true
-          grep -oE 'href="[^"]+"' wob.html | grep -iE 'xlsx|history|download' | sort -u | head -30
-          LINK=$(grep -oE 'href="[^"]+"' wob.html | grep -i 'history' | head -1 | sed -E 's/href="([^"]+)"/\1/; s/&amp;/\&/g')
-          case "$LINK" in /*) LINK="https://energy.ec.europa.eu$LINK";; esac
-          echo "LINK storico: $LINK"
-          curl -sS -L -A "$UA" --connect-timeout 20 -m 120 -o storico.xlsx "$LINK" -w "HTTP %{http_code} %{size_download} byte\n" || true
+          curl -sS -L -A "$UA" -m 60 -o wob.html "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en"
+          LINK=$(grep -oE 'href="[^"]+"' wob.html | grep -i 'Prices_History' | head -1 | sed -E 's/href="([^"]+)"/\1/; s/&amp;/\&/g')
+          curl -sS -L -A "$UA" -m 120 -o storico.xlsx "https://energy.ec.europa.eu$LINK"
           pip install -q openpyxl
           python3 - <<'EOF'
-          import openpyxl
+          import openpyxl, statistics, datetime as dt
           wb = openpyxl.load_workbook("storico.xlsx", read_only=True, data_only=True)
-          for ws in wb.worksheets:
-              print("FOGLIO", ws.title, ws.max_row, ws.max_column)
-              for i, r in enumerate(ws.iter_rows(values_only=True)):
-                  if i < 6:
-                      print([c for c in r[:40]])
-                  else:
-                      break
-          ws = wb.worksheets[0]
-          # cerca le colonne dell'Italia
+          ws = wb["Prices with taxes"]
           righe = list(ws.iter_rows(values_only=True))
-          for i in range(min(5, len(righe))):
-              for j, c in enumerate(righe[i]):
-                  if c and "IT" in str(c).upper() and len(str(c)) < 40:
-                      print("intestazione", i, j, repr(c))
-          print("ULTIME RIGHE")
-          for r in righe[-3:]:
-              print([c for c in r[:12]])
+          intest = righe[0]
+          col = {n: intest.index(n) for n in ("IT_price_with_tax_euro95", "IT_price_with_tax_diesel", "IT_price_with_tax_LPG")}
+          print("colonne", col)
+          dati = [r for r in righe[3:] if isinstance(r[0], dt.datetime)]
+          print("settimane", len(dati), "dal", dati[-1][0].date(), "al", dati[0][0].date())
+          for r in dati[:4]:
+              print(r[0].date(), [r[c] for c in col.values()])
+          for anni in (1, 3, 5, 10):
+              lim = dati[0][0] - dt.timedelta(days=365.25 * anni)
+              sel = [r for r in dati if r[0] > lim]
+              medie = [round(statistics.mean(float(r[c]) for r in sel if r[c]) / 1000, 3) for c in col.values()]
+              print(f"media {anni} anni ({len(sel)} sett.):", medie)
+          # buchi nella serie italiana
+          vuote = [r[0].date() for r in dati[:300] if any(r[c] in (None, "") for c in col.values())]
+          print("settimane senza dato IT (ultime 300):", vuote[:20])
           EOF
-      - name: Pagine MIMIT con link
-        continue-on-error: true
-        run: |
-          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          for u in \
-            "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-archivio-prezzi" \
-            "https://www.mimit.gov.it/it/prezzo-medio-carburanti" ; do
-            echo "===== $u"
-            curl -sS -L -A "$UA" --connect-timeout 20 -m 60 "$u" -o pagina.html -w "HTTP %{http_code}\n" || true
-            grep -oE 'href="[^"]+\.(csv|pdf|gz|zip|xls|xlsx)[^"]*"' pagina.html | sort -u | head -40
-          done
