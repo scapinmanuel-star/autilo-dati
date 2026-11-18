@@ -1,0 +1,23 @@
+{
+  "data_aggiornamento": "2026-11-16",
+  "nota": "Valori di riferimento: bollo e revisione da verificare ogni anno sulle tariffe vigenti; premio RC = ipotesi per uomo di 40 anni, 20 anni di patente, Toscana.",
+  "bollo": {
+    "eur_kw_fino_100": 2.58,
+    "eur_kw_oltre_100": 3.87,
+    "superbollo_soglia_kw": 185,
+    "superbollo_eur_kw": 20.0,
+    "esenzione_elettriche_anni": 5,
+    "quota_elettriche_dopo_esenzione": 0.25
+  },
+  "revisione_eur": 79.02,
+  "energia": {
+    "casa_eur_kwh": 0.3163,
+    "casa_fonte": "ARERA, prezzo di riferimento clienti domestici, 3° trimestre 2026",
+    "colonnina_eur_kwh": 0.77,
+    "colonnina_fonte": "Altroconsumo, media AC 0,69 / fast 0,75 / ultra-fast 0,86"
+  },
+  "assicurazione": {
+    "premio_rc_base_eur": 450,
+    "affidabilita": "stima"
+  }
+}

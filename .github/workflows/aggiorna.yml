@@ -1,0 +1,62 @@
+name: Aggiorna dati
+
+on:
+  schedule:
+    # Ogni giorno alle 05:41 UTC (06:41 in Italia, 07:41 con l'ora legale).
+    # Il bollettino UE esce una volta a settimana: i giorni senza novità
+    # il workflow finisce senza commit.
+    - cron: "41 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "script/**"
+      - "test/**"
+      - "dati/auto.json"
+      - "dati/listino.json"
+      - "dati/tariffe.json"
+      - ".github/workflows/aggiorna.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aggiorna-dati
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa
+        run: pip install -r requirements.txt
+
+      - name: Test degli script
+        run: python -m pytest -q test
+
+      - name: Prezzi carburanti (Weekly Oil Bulletin UE)
+        run: python script/aggiorna_carburanti.py
+
+      - name: Indice dei file
+        run: python script/aggiorna_indice.py
+
+      - name: Pubblica se qualcosa è cambiato
+        run: |
+          git add dati
+          if git diff --cached --quiet; then
+            echo "Nessun dato nuovo."
+            exit 0
+          fi
+          SETTIMANA=$(python -c "import json;print(json.load(open('dati/carburanti.json'))['settimana'])")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Dati aggiornati (carburanti: settimana del $SETTIMANA)"
+          git push
