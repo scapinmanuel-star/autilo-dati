@@ -6,47 +6,75 @@ on:
 jobs:
   esplora:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - name: File giornalieri MIMIT
+      - name: Raggiungibilità
         run: |
-          UA="Mozilla/5.0 (autilo-dati; +https://github.com/scapinmanuel-star/autilo-dati)"
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          for u in https://www.mimit.gov.it/ https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv \
+                   https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en https://sisen.mase.gov.it/ ; do
+            curl -sS -L -I -A "$UA" --connect-timeout 15 -m 40 -o /dev/null \
+              -w "$u -> HTTP %{http_code} ip=%{remote_ip} t_connect=%{time_connect} t_tot=%{time_total}\n" "$u" || echo "$u -> ERRORE $?"
+          done
+      - name: File giornalieri MIMIT
+        continue-on-error: true
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
           for f in prezzo_alle_8.csv anagrafica_impianti_attivi.csv; do
             echo "===== $f"
-            curl -sS -L -A "$UA" -o "$f" -w "HTTP %{http_code} %{size_download} byte %{content_type}\n" \
-              "https://www.mimit.gov.it/images/exportCSV/$f" || true
+            curl -sS -L -A "$UA" --connect-timeout 20 -m 240 -o "$f" \
+              -w "HTTP %{http_code} %{size_download} byte %{content_type} in %{time_total}s\n" \
+              "https://www.mimit.gov.it/images/exportCSV/$f" || echo "ERRORE $?"
             head -c 900 "$f"; echo
             echo "righe: $(wc -l < "$f")"
           done
-          echo "===== carburanti distinti (prime 40 per frequenza)"
+          echo "===== carburanti (prime 40 per frequenza)"
           tail -n +3 prezzo_alle_8.csv | awk -F'|' '{print $2" | self="$4}' | sort | uniq -c | sort -rn | head -40
           echo "===== tipi impianto"
           tail -n +3 anagrafica_impianti_attivi.csv | awk -F'|' '{print $4}' | sort | uniq -c | sort -rn | head
-          echo "===== date dtComu (le 10 più frequenti)"
-          tail -n +3 prezzo_alle_8.csv | awk -F'|' '{print substr($5,1,10)}' | sort | uniq -c | sort -rn | head
-      - name: Pagine con link
+          echo "===== date dtComu (le 12 più frequenti)"
+          tail -n +3 prezzo_alle_8.csv | awk -F'|' '{print substr($5,1,10)}' | sort | uniq -c | sort -rn | head -12
+      - name: Weekly Oil Bulletin (UE)
+        continue-on-error: true
         run: |
-          UA="Mozilla/5.0 (autilo-dati; +https://github.com/scapinmanuel-star/autilo-dati)"
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          curl -sS -L -A "$UA" --connect-timeout 20 -m 60 -o wob.html \
+            "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en" -w "HTTP %{http_code}\n" || true
+          grep -oE 'href="[^"]+"' wob.html | grep -iE 'xlsx|history|download' | sort -u | head -30
+          LINK=$(grep -oE 'href="[^"]+"' wob.html | grep -i 'history' | head -1 | sed -E 's/href="([^"]+)"/\1/; s/&amp;/\&/g')
+          case "$LINK" in /*) LINK="https://energy.ec.europa.eu$LINK";; esac
+          echo "LINK storico: $LINK"
+          curl -sS -L -A "$UA" --connect-timeout 20 -m 120 -o storico.xlsx "$LINK" -w "HTTP %{http_code} %{size_download} byte\n" || true
+          pip install -q openpyxl
+          python3 - <<'EOF'
+          import openpyxl
+          wb = openpyxl.load_workbook("storico.xlsx", read_only=True, data_only=True)
+          for ws in wb.worksheets:
+              print("FOGLIO", ws.title, ws.max_row, ws.max_column)
+              for i, r in enumerate(ws.iter_rows(values_only=True)):
+                  if i < 6:
+                      print([c for c in r[:40]])
+                  else:
+                      break
+          ws = wb.worksheets[0]
+          # cerca le colonne dell'Italia
+          righe = list(ws.iter_rows(values_only=True))
+          for i in range(min(5, len(righe))):
+              for j, c in enumerate(righe[i]):
+                  if c and "IT" in str(c).upper() and len(str(c)) < 40:
+                      print("intestazione", i, j, repr(c))
+          print("ULTIME RIGHE")
+          for r in righe[-3:]:
+              print([c for c in r[:12]])
+          EOF
+      - name: Pagine MIMIT con link
+        continue-on-error: true
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
           for u in \
             "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-archivio-prezzi" \
-            "https://www.mimit.gov.it/it/prezzo-medio-carburanti" \
-            "https://www.mimit.gov.it/it/prezzo-medio-carburanti/regioni" \
-            "https://www.mimit.gov.it/it/prezzo-medio-carburanti/autostrade" ; do
+            "https://www.mimit.gov.it/it/prezzo-medio-carburanti" ; do
             echo "===== $u"
-            curl -sS -L -A "$UA" "$u" -o pagina.html -w "HTTP %{http_code}\n" || true
-            grep -oE 'href="[^"]+\.(csv|pdf|gz|zip|xls|xlsx)[^"]*"' pagina.html | sort -u | head -60
-            grep -oE '[Aa]ggiornamento [0-9-]+' pagina.html | head -2
-          done
-      - name: Serie settimanale MASE (candidati)
-        run: |
-          UA="Mozilla/5.0 (autilo-dati; +https://github.com/scapinmanuel-star/autilo-dati)"
-          for u in \
-            "https://dgsaie.mise.gov.it/open_data_export.php?export-id=4&export-type=csv" \
-            "https://dgsaie.mise.gov.it/prezzi_carburanti_settimanali.php" \
-            "https://sisen.mase.gov.it/dgsaie/prezzi-settimanali-carburanti" \
-            "https://sisen.mase.gov.it/dgsaie/open-data" \
-            "https://sisen.mase.gov.it/dgsaie/api/v1/weekly-prices/report/export?format=CSV&lang=it" ; do
-            echo "===== $u"
-            curl -sS -L -A "$UA" "$u" -o serie.out -w "HTTP %{http_code} %{size_download} byte %{content_type} -> %{url_effective}\n" || true
-            head -c 700 serie.out | tr -d '\000'; echo
-            grep -oE '(href|src)="[^"]*(csv|export|api|open)[^"]*"' serie.out | sort -u | head -30 || true
+            curl -sS -L -A "$UA" --connect-timeout 20 -m 60 "$u" -o pagina.html -w "HTTP %{http_code}\n" || true
+            grep -oE 'href="[^"]+\.(csv|pdf|gz|zip|xls|xlsx)[^"]*"' pagina.html | sort -u | head -40
           done
