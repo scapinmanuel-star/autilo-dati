@@ -2,9 +2,9 @@
   "formato": 1,
   "file": {
     "auto.json": {
-      "byte": 335610,
-      "sha256": "99b5009fc9268ed853cf79970c07c91fdfa9b8559e05ddb1edb57c529084a926",
-      "data": "2026-11-18"
+      "byte": 343342,
+      "sha256": "19e7a5fd9007a0cb69ea4de72a2ca509d81102fefe31f7a7f90d6706d29b7ad4",
+      "data": "2026-11-21"
     },
     "carburanti.json": {
       "byte": 1084,
@@ -13,8 +13,8 @@
     },
     "listino.json": {
       "byte": 288075,
-      "sha256": "8b18c24541f0835adf9e46e1c5f7a3184ba567f5d61bd0e6f2a85ac74bb67fcd",
-      "data": "2026-11-18"
+      "sha256": "2312deb879a1803e726545604cf93c1be29db15c503ad79dac2150f0856b20a3",
+      "data": "2026-11-21"
     },
     "storico_carburanti_it.csv": {
       "byte": 34992,
