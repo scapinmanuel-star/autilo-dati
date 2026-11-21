@@ -1,6 +1,6 @@
 {
  "versione": 3,
- "data_aggiornamento": "2026-11-18",
+ "data_aggiornamento": "2026-11-21",
  "nota": "Generato da autilo_prezzi_v3.xlsx con tool/genera_catalogo.py. Prezzi chiavi in mano dell'allestimento centrale; 'stima' e 'datato' compaiono nell'app come 'da verificare'.",
  "quota_km_elettrici_plugin_eea": 0.243,
  "auto": [
@@ -7065,7 +7065,7 @@
    "id": "bmw-x1-diesel-1995-110kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
+   "allestimento": "sDrive18d X-Line (DCT)",
    "motore": "2.0 diesel 150 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
@@ -7073,10 +7073,10 @@
    "cilindrata_cc": 1995,
    "consumo_l100": 6.04,
    "veicoli_eea": 10799,
-   "prezzo_listino_eur": 45200,
+   "prezzo_listino_eur": 48100,
    "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/detail/T0396233IT/listino-bmw-x1",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7090,7 +7090,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "data_prezzo": "2026-10-27"
+   "data_prezzo": "2026-05-28",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026"
   },
   {
    "id": "bmw-x1-elettrica-x-150kw",
@@ -7159,18 +7160,18 @@
    "id": "bmw-x1-diesel-1995-110kw-2",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
-   "motore": "2.0 diesel mild hybrid 150 CV",
+   "allestimento": "sDrive20d X-Line (DCT)",
+   "motore": "2.0 diesel mild hybrid 163 CV",
    "alimentazione": "diesel",
    "segmento": "SUV premium",
-   "potenza_kw": 110,
+   "potenza_kw": 120,
    "cilindrata_cc": 1995,
    "consumo_l100": 5.84,
    "veicoli_eea": 2111,
-   "prezzo_listino_eur": 45200,
+   "prezzo_listino_eur": 50100,
    "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/detail/T0396233IT/listino-bmw-x1",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7184,7 +7185,8 @@
     "5": 0.47,
     "10": 0.22
    },
-   "data_prezzo": "2026-10-27"
+   "data_prezzo": "2026-05-28",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 110 kW più 10 kW del sistema a 48 V (163 CV)"
   },
   {
    "id": "bmw-x1-diesel-1995-145kw",
@@ -7222,8 +7224,8 @@
    "id": "bmw-x1-plugin-1499-100kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
-   "motore": "1.5 Plug-in Hybrid 136 CV",
+   "allestimento": "xDrive25e X-Line (DCT)",
+   "motore": "1.5 Plug-in Hybrid 245 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
    "potenza_kw": 100,
@@ -7232,10 +7234,10 @@
    "consumo_l100_reale_misto": 5.28,
    "consumo_kwh100": 17.3,
    "veicoli_eea": 1377,
-   "prezzo_listino_eur": 45200,
+   "prezzo_listino_eur": 55300,
    "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/detail/T0396233IT/listino-bmw-x1",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7249,14 +7251,15 @@
     "5": 0.43,
     "10": 0.19
    },
-   "data_prezzo": "2026-10-27",
-   "note_dati": "consumo a batteria scarica dalla versione termico da 100 kW dello stesso modello"
+   "data_prezzo": "2026-05-28",
+   "note_dati": "consumo a batteria scarica dalla versione termico da 100 kW dello stesso modello",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 245 CV di sistema (motore a benzina 100 kW)"
   },
   {
    "id": "bmw-x1-plugin-1499-92kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "xDrive25e X-Line (DCT)",
+   "allestimento": "X-Line",
    "motore": "1.5 Plug-in Hybrid 125 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
@@ -7266,10 +7269,10 @@
    "consumo_l100_reale_misto": 6.35,
    "consumo_kwh100": 17.2,
    "veicoli_eea": 749,
-   "prezzo_listino_eur": 55300,
-   "affidabilita_prezzo": "verificato",
-   "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-16d-xline.html",
+   "prezzo_listino_eur": 42500,
+   "affidabilita_prezzo": "stima",
+   "stato_listino": "fuori listino",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7284,8 +7287,7 @@
     "10": 0.19
    },
    "note_dati": "consumo a batteria scarica dalla versione termico da 100 kW dello stesso modello; kWh/100 km da un'altra versione dello stesso modello",
-   "nota_listino": "listino BMW Italia valido dal 28/05/2026, potenza di sistema 180 kW (245 CV), i 92 kW sono del solo motore termico nei dati EEA, c'è anche una Special Edition X-Line a 46.900",
-   "data_prezzo": "2026-05-28"
+   "nota_listino": "xDrive25e della X1 precedente (F48, 1.5 da 92 kW): la X1 attuale ha la xDrive25e con 1.5 da 100 kW (245 CV di sistema)"
   },
   {
    "id": "bmw-x1-ibrida-1998-150kw",
@@ -7354,18 +7356,18 @@
    "id": "bmw-x1-ibrida-1499-115kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
-   "motore": "1.5 Hybrid 156 CV",
+   "allestimento": "sDrive20i X-Line (DCT)",
+   "motore": "1.5 benzina mild hybrid 170 CV",
    "alimentazione": "ibrida",
    "segmento": "SUV premium",
-   "potenza_kw": 115,
+   "potenza_kw": 125,
    "cilindrata_cc": 1499,
    "consumo_l100": 7.16,
    "veicoli_eea": 537,
-   "prezzo_listino_eur": 45200,
+   "prezzo_listino_eur": 48100,
    "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/detail/T0396233IT/listino-bmw-x1",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7379,14 +7381,15 @@
     "5": 0.49,
     "10": 0.24
    },
-   "data_prezzo": "2026-10-27"
+   "data_prezzo": "2026-05-28",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 115 kW più 10 kW del sistema a 48 V (170 CV)"
   },
   {
    "id": "bmw-x1-plugin-1499-110kw",
    "marca": "BMW",
    "modello": "X1",
-   "allestimento": "X-Line / M Sport",
-   "motore": "1.5 Plug-in Hybrid 150 CV",
+   "allestimento": "xDrive30e X-Line (DCT)",
+   "motore": "1.5 Plug-in Hybrid 326 CV",
    "alimentazione": "plugin",
    "segmento": "SUV premium",
    "potenza_kw": 110,
@@ -7395,10 +7398,10 @@
    "consumo_l100_reale_misto": 5.64,
    "consumo_kwh100": 17.2,
    "veicoli_eea": 461,
-   "prezzo_listino_eur": 45200,
+   "prezzo_listino_eur": 57900,
    "affidabilita_prezzo": "verificato",
    "stato_listino": "a listino",
-   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/detail/T0396233IT/listino-bmw-x1",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
    "piano_tagliandi": {
     "intervallo_km": 20000,
     "intervallo_anni": 1,
@@ -7412,8 +7415,9 @@
     "5": 0.43,
     "10": 0.19
    },
-   "data_prezzo": "2026-10-27",
-   "note_dati": "consumo a batteria scarica dalla versione ibrida da 115 kW dello stesso modello"
+   "data_prezzo": "2026-05-28",
+   "note_dati": "consumo a batteria scarica dalla versione ibrida da 115 kW dello stesso modello",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026, 326 CV di sistema (motore a benzina 110 kW)"
   },
   {
    "id": "bmw-x1-elettrica-x-225kw",
@@ -11037,6 +11041,222 @@
    "note_dati": "consumo copiato dal motore EEA più simile dello stesso modello (150 kW)",
    "nota_listino": "listino 2026 consultato il 18/11/2026 (una pagina più vecchia dello stesso sito riporta 67.450)",
    "data_prezzo": "2026-11-18"
+  },
+  {
+   "id": "bmw-x1-diesel-1995-120kw-xdrive",
+   "marca": "BMW",
+   "modello": "X1",
+   "allestimento": "xDrive20d X-Line (DCT)",
+   "motore": "2.0 diesel mild hybrid 163 CV, integrale",
+   "alimentazione": "diesel",
+   "segmento": "SUV premium",
+   "potenza_kw": 120,
+   "cilindrata_cc": 1995,
+   "consumo_l100": 6.37,
+   "prezzo_listino_eur": 52600,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.patentati.it/listini-auto/marca/BMW/x1/sdrive-18i-sport.html",
+   "piano_tagliandi": {
+    "intervallo_km": 20000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 420
+   },
+   "misura_pneumatici": "225/55 R18",
+   "costo_treno_pneumatici_eur": 700,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.57,
+    "5": 0.47,
+    "10": 0.22
+   },
+   "data_prezzo": "2026-05-28",
+   "nota_listino": "listino BMW Italia valido dal 28/05/2026; consumo reale stimato: WLTP 4,9 l/100 km +30% (scarto della sDrive20d nei dati EEA)"
+  },
+  {
+   "id": "bmw-x3-ibrida-1998-153kw",
+   "marca": "BMW",
+   "modello": "X3",
+   "allestimento": "xDrive20",
+   "motore": "2.0 benzina mild hybrid 208 CV",
+   "alimentazione": "ibrida",
+   "segmento": "SUV premium",
+   "potenza_kw": 153,
+   "cilindrata_cc": 1998,
+   "consumo_l100": 8.69,
+   "prezzo_listino_eur": 66200,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
+   "piano_tagliandi": {
+    "intervallo_km": 20000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 480
+   },
+   "misura_pneumatici": "245/50 R19",
+   "costo_treno_pneumatici_eur": 850,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.6,
+    "5": 0.49,
+    "10": 0.24
+   },
+   "data_prezzo": "2025-11-12",
+   "nota_listino": "listino ufficiale BMW X3 (G45) valido dal 12/11/2025, prezzo confermato su patentati.it il 21/11/2026; consumo reale stimato: WLTP 6,9 l/100 km +26% (scarto della xDrive20d nei dati EEA)"
+  },
+  {
+   "id": "bmw-x3-diesel-2993-223kw",
+   "marca": "BMW",
+   "modello": "X3",
+   "allestimento": "xDrive40d",
+   "motore": "3.0 diesel mild hybrid 303 CV",
+   "alimentazione": "diesel",
+   "segmento": "SUV premium",
+   "potenza_kw": 223,
+   "cilindrata_cc": 2993,
+   "consumo_l100": 7.81,
+   "prezzo_listino_eur": 75900,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
+   "piano_tagliandi": {
+    "intervallo_km": 20000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 480
+   },
+   "misura_pneumatici": "245/50 R19",
+   "costo_treno_pneumatici_eur": 850,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.57,
+    "5": 0.47,
+    "10": 0.22
+   },
+   "data_prezzo": "2025-11-12",
+   "nota_listino": "listino ufficiale BMW X3 (G45) valido dal 12/11/2025, prezzo confermato su patentati.it il 21/11/2026; consumo reale stimato: WLTP 6,2 l/100 km +26% (scarto della xDrive20d nei dati EEA)"
+  },
+  {
+   "id": "bmw-x3-ibrida-2998-293kw",
+   "marca": "BMW",
+   "modello": "X3",
+   "allestimento": "M50 xDrive MSport Pro",
+   "motore": "3.0 benzina mild hybrid 398 CV",
+   "alimentazione": "ibrida",
+   "segmento": "SUV premium",
+   "potenza_kw": 293,
+   "cilindrata_cc": 2998,
+   "consumo_l100": 9.83,
+   "prezzo_listino_eur": 92300,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.press.bmwgroup.com/italy/article/attachment/T0443615IT/641215",
+   "piano_tagliandi": {
+    "intervallo_km": 20000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 480
+   },
+   "misura_pneumatici": "245/50 R19",
+   "costo_treno_pneumatici_eur": 850,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.6,
+    "5": 0.49,
+    "10": 0.24
+   },
+   "data_prezzo": "2025-11-12",
+   "nota_listino": "listino ufficiale BMW X3 (G45) valido dal 12/11/2025, solo in allestimento MSport Pro; consumo reale stimato: WLTP 7,8 l/100 km +26% (scarto della xDrive20d nei dati EEA)"
+  },
+  {
+   "id": "mercedes-benz-gla-elettrica-x-260kw",
+   "marca": "Mercedes-Benz",
+   "modello": "GLA",
+   "allestimento": "nuova GLA 350 4MATIC Advanced (elettrica)",
+   "motore": "elettrico 260 kW 354 CV, integrale",
+   "alimentazione": "elettrica",
+   "segmento": "SUV premium",
+   "potenza_kw": 260,
+   "consumo_kwh100": 15.1,
+   "prezzo_listino_eur": 59221,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.alvolante.it/listino_auto/mercedes-gla_elettrica/350_advanced_4matic-automatica-sommario",
+   "piano_tagliandi": {
+    "intervallo_km": 20000,
+    "intervallo_anni": 2,
+    "costo_medio_eur": 450
+   },
+   "misura_pneumatici": "235/55 R18",
+   "costo_treno_pneumatici_eur": 750,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.45,
+    "5": 0.37,
+    "10": 0.16
+   },
+   "data_prezzo": "2026-07-30",
+   "nota_listino": "listino Mercedes-Benz Italia, ordini dal 30/07/2026 (la 350 4MATIC parte da 56.036 euro in allestimento Executive); consumo WLTP 15,1 kWh/100 km, batteria 85 kWh"
+  },
+  {
+   "id": "kia-ceed-sportswagon-benzina-998-74kw",
+   "marca": "Kia",
+   "modello": "Ceed Sportswagon",
+   "allestimento": "Business",
+   "motore": "1.0 T-GDi 100 CV, cambio manuale",
+   "alimentazione": "benzina",
+   "segmento": "station wagon",
+   "potenza_kw": 74,
+   "cilindrata_cc": 998,
+   "consumo_l100": 6.36,
+   "prezzo_listino_eur": 26100,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.alvolante.it/listino_auto/kia-ceed_sportswagon/1.0_tgdi_business-sommario",
+   "piano_tagliandi": {
+    "intervallo_km": 15000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 260
+   },
+   "misura_pneumatici": "225/45 R17",
+   "costo_treno_pneumatici_eur": 520,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.61,
+    "5": 0.5,
+    "10": 0.25
+   },
+   "data_prezzo": "2026-11-21",
+   "nota_listino": "listino Kia Italia in vigore (alvolante.it, consultato il 21/11/2026); da gennaio 2027 la sostituisce la K4 Sportswagon; consumo reale stimato: WLTP 5,3 l/100 km +20%"
+  },
+  {
+   "id": "kia-ceed-sportswagon-ibrida-998-74kw",
+   "marca": "Kia",
+   "modello": "Ceed Sportswagon",
+   "allestimento": "Business DCT",
+   "motore": "1.0 T-GDi mild hybrid 100 CV, cambio DCT",
+   "alimentazione": "ibrida",
+   "segmento": "station wagon",
+   "potenza_kw": 74,
+   "cilindrata_cc": 998,
+   "consumo_l100": 6.48,
+   "prezzo_listino_eur": 29100,
+   "affidabilita_prezzo": "verificato",
+   "stato_listino": "a listino",
+   "fonte_prezzo": "https://www.alvolante.it/listino_auto/kia-ceed_sportswagon/1.0_tgdi_mhev_business_dct-automatica-dotazione",
+   "piano_tagliandi": {
+    "intervallo_km": 15000,
+    "intervallo_anni": 1,
+    "costo_medio_eur": 260
+   },
+   "misura_pneumatici": "225/45 R17",
+   "costo_treno_pneumatici_eur": 520,
+   "durata_pneumatici_km": 30000,
+   "curva_residuo": {
+    "3": 0.61,
+    "5": 0.5,
+    "10": 0.25
+   },
+   "data_prezzo": "2026-11-21",
+   "nota_listino": "listino Kia Italia in vigore (alvolante.it, consultato il 21/11/2026); da gennaio 2027 la sostituisce la K4 Sportswagon; consumo reale stimato: WLTP 5,4 l/100 km +20% (dato WLTP da autotijd.be)"
   }
  ]
 }
