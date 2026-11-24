@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Indirizzo della versione web: lo imposta "flutter build web
+       --base-href" (es. /autilo-dati/app/). -->
+  <base href="/autilo-dati/app/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Autilo confronta il costo totale di due o più auto in 3, 5 e 10 anni: acquisto, carburante, bollo, assicurazione, manutenzione e valore residuo.">
+  <meta name="theme-color" content="#FFF0B8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Autilo">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>Autilo – il costo vero delle auto</title>
+
+  <!-- Anteprima dei PDF: pdf.js è incluso nel sito, non si scarica da
+       servizi esterni. Caricato qui, prima dell'app, il pacchetto printing
+       lo trova già pronto e non lo cerca altrove. -->
+  <script src="pdfjs/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "pdfjs/pdf.worker.min.js";
+  </script>
+
+  <style>
+    html, body { margin: 0; height: 100%; background: #EEF0F3; }
+    #caricamento {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 16px;
+      font: 16px/1.4 system-ui, sans-serif; color: #4A525C;
+    }
+    #caricamento img { width: 96px; height: 96px; }
+    @media (prefers-color-scheme: dark) {
+      html, body { background: #15191E; }
+      #caricamento { color: #C9CED4; }
+    }
+  </style>
+</head>
+<body>
+  <div id="caricamento" role="status">
+    <img src="icons/Icon-192.png" alt="">
+    <div>Caricamento di Autilo…</div>
+  </div>
+  <noscript>Per usare Autilo nel browser serve JavaScript attivo.</noscript>
+
+  <!-- Conteggio anonimo delle visite (GoatCounter, senza cookie). -->
+  <script data-goatcounter="https://autilo.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

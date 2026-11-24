@@ -1,0 +1,319 @@
+/* Pagina pubblica di Autilo. Colori dell'app (stile A), font Barlow
+   incluso nel sito (licenza OFL, font/OFL.txt). */
+
+@font-face {
+  font-family: "Barlow";
+  src: url("font/barlow-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("font/barlow-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("font/barlow-condensed-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("font/barlow-condensed-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --giallo: #FFC928;
+  --giallo-chiaro: #FFF0B8;
+  --asfalto: #1C2127;
+  --asfalto-medio: #4A525C;
+  --strada: #EEF0F3;
+  --bianco: #FFFFFF;
+  --misura: 40rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Barlow", system-ui, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--asfalto);
+  background: var(--strada);
+}
+
+h1, h2, h3 {
+  font-family: "Barlow Condensed", "Barlow", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+}
+
+a { color: inherit; text-underline-offset: 0.18em; }
+
+a:focus-visible, .pulsante:focus-visible {
+  outline: 3px solid var(--asfalto);
+  outline-offset: 3px;
+}
+
+.contenitore {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Parte alta ---------- */
+
+.testata {
+  background: var(--giallo-chiaro);
+  padding-bottom: 3.5rem;
+}
+
+.barra {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-decoration: none;
+}
+.barra img { width: 2.5rem; height: 2.5rem; }
+.barra span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  letter-spacing: 0.01em;
+}
+
+.presentazione {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.presentazione h1 {
+  font-size: clamp(2.9rem, 9vw, 5.4rem);
+  letter-spacing: -0.01em;
+  max-width: 12ch;
+}
+
+.presentazione p {
+  max-width: var(--misura);
+  margin: 1.25rem 0 0;
+  font-size: 1.2rem;
+}
+
+.azioni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.pulsante {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 3.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-decoration: none;
+  border: 2px solid var(--asfalto);
+}
+.pulsante small { font-weight: 400; font-size: 0.85rem; opacity: 0.8; }
+.pulsante-principale { background: var(--asfalto); color: var(--bianco); }
+.pulsante-principale:hover { background: #2E353D; }
+.pulsante-secondario { background: transparent; color: var(--asfalto); }
+.pulsante-secondario:hover { background: rgba(28, 33, 39, 0.07); }
+
+.nota-azioni {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--asfalto-medio);
+}
+
+/* Schermata dell'app in una cornice da telefono. */
+.telefono {
+  justify-self: center;
+  width: min(16rem, 78%);
+  margin: 0;
+  border: 0.6rem solid var(--asfalto);
+  border-radius: 2rem;
+  overflow: hidden;
+  background: var(--bianco);
+  box-shadow: 0 1.8rem 3rem -1.8rem rgba(28, 33, 39, 0.55);
+}
+.telefono img { display: block; width: 100%; height: auto; }
+
+@media (min-width: 56rem) {
+  .presentazione { grid-template-columns: 1.4fr 1fr; padding-top: 2.5rem; }
+  .telefono { width: min(19rem, 100%); }
+}
+
+/* ---------- La strada: 3, 5 e 10 anni come cippi chilometrici ---------- */
+
+.strada {
+  position: relative;
+  height: 7rem;
+  background: var(--asfalto);
+  border-top: 3px solid #F4F5F7;
+  border-bottom: 3px solid #F4F5F7;
+}
+
+.strada::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - 3px);
+  height: 6px;
+  background: repeating-linear-gradient(
+    to right, var(--giallo) 0 3.5rem, transparent 3.5rem 6rem);
+  animation: viaggio 1.8s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
+@keyframes viaggio {
+  from { background-position: 30rem 0; }
+  to { background-position: 0 0; }
+}
+
+.cippo {
+  position: absolute;
+  bottom: -1.9rem;
+  width: 4.6rem;
+  padding: 0.55rem 0 0.4rem;
+  text-align: center;
+  background: var(--bianco);
+  border: 2px solid var(--asfalto);
+  border-radius: 2.3rem 2.3rem 0.4rem 0.4rem;
+  box-shadow: inset 0 0.55rem 0 var(--giallo);
+  line-height: 1;
+}
+.cippo b {
+  display: block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.9rem;
+  padding-top: 0.25rem;
+}
+.cippo span { font-size: 0.85rem; }
+.cippo:nth-child(1) { left: 12%; }
+.cippo:nth-child(2) { left: calc(50% - 2.3rem); }
+.cippo:nth-child(3) { right: 12%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .strada::before { animation: none; }
+}
+
+/* ---------- Sezioni ---------- */
+
+main { padding-top: 3rem; }
+
+.sezione { padding: 3rem 0; }
+.sezione + .sezione { border-top: 2px solid #DCE0E5; }
+
+.sezione h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 1.25rem;
+}
+
+.sezione > .contenitore > p,
+.testo { max-width: var(--misura); }
+
+.voci {
+  display: grid;
+  gap: 1.5rem 3rem;
+  margin: 1.5rem 0 0;
+}
+.voci div { max-width: 34rem; }
+.voci dt {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+}
+.voci dd { margin: 0.2rem 0 0; color: var(--asfalto-medio); }
+
+@media (min-width: 48rem) {
+  .voci { grid-template-columns: 1fr 1fr; }
+}
+
+.passi {
+  list-style: none;
+  counter-reset: passo;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  max-width: var(--misura);
+}
+.passi li {
+  counter-increment: passo;
+  position: relative;
+  padding: 0 0 1.4rem 3.4rem;
+}
+.passi li::before {
+  content: counter(passo);
+  position: absolute;
+  left: 0;
+  top: -0.15rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--giallo);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.passi b { font-weight: 600; }
+
+.esempi {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  background: var(--bianco);
+  border: 1px solid #D5DAE0;
+  border-radius: 0.35rem;
+  padding: 0 0.35rem;
+  white-space: nowrap;
+}
+
+.avviso-installazione {
+  max-width: var(--misura);
+  margin: 0.5rem 0 0;
+  padding: 1rem 1.25rem;
+  background: var(--giallo-chiaro);
+  border-left: 6px solid var(--giallo);
+}
+
+/* ---------- Piede ---------- */
+
+.piede {
+  margin-top: 3rem;
+  padding: 2.5rem 0 3rem;
+  background: var(--asfalto);
+  color: #D9DDE2;
+  font-size: 1rem;
+}
+.piede p { max-width: var(--misura); margin: 0 0 1rem; }
+.piede a { color: var(--bianco); }
+
+/* ---------- Note legali ---------- */
+
+.note h2 { font-size: 1.7rem; margin: 2rem 0 0.5rem; }
+.note p { max-width: var(--misura); margin: 0 0 0.9rem; }
+.note .breve {
+  max-width: var(--misura);
+  padding: 1rem 1.25rem;
+  background: var(--giallo-chiaro);
+  border-left: 6px solid var(--giallo);
+}

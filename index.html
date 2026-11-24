@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autilo – quanto ti costa davvero un'auto</title>
+  <meta name="description" content="Confronta due o più auto sul costo totale in 3, 5 e 10 anni: acquisto, carburante, bollo, assicurazione, tagliandi e gomme, meno il valore quando la rivendi. Gratis, nel browser o su Android.">
+  <meta name="theme-color" content="#FFF0B8">
+  <meta property="og:title" content="Autilo – quanto ti costa davvero un'auto">
+  <meta property="og:description" content="Confronta due o più auto sul costo totale in 3, 5 e 10 anni. Gratis, senza registrazione.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:image" content="https://scapinmanuel-star.github.io/autilo-dati/anteprima.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://scapinmanuel-star.github.io/autilo-dati/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icona-180.png">
+  <link rel="preload" href="font/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+<header class="testata">
+  <div class="contenitore">
+    <a class="barra" href="./" aria-label="Autilo, pagina iniziale">
+      <img src="icona.svg" alt="">
+      <span>Autilo</span>
+    </a>
+
+    <div class="presentazione">
+      <div>
+        <h1>Quanto ti costa davvero un'auto?</h1>
+        <p>Il prezzo in concessionaria è solo l'inizio. Autilo mette nel conto
+          carburante, bollo, assicurazione, tagliandi, revisione e gomme, e toglie
+          quanto vale l'auto quando la rivendi. Così confronti due o più auto su
+          quello che spendi davvero in 3, 5 o 10 anni.</p>
+
+        <div class="azioni">
+          <a class="pulsante pulsante-principale" href="app/">Usa Autilo nel browser</a>
+          <a class="pulsante pulsante-secondario"
+             href="https://github.com/scapinmanuel-star/autilo-dati/releases/latest/download/Autilo.apk">
+            Scarica per Android <small>file APK, circa 60 MB</small></a>
+        </div>
+        <p class="nota-azioni">Gratis, senza registrazione e senza pubblicità.
+          Nel browser funziona su telefono, tablet e computer, anche iPhone.</p>
+      </div>
+      <figure class="telefono">
+        <img src="schermata-confronto.jpg" width="390" height="844"
+             alt="Autilo con una Peugeot 2008 e una Renault Clio a confronto: costo in 5 anni, al mese e al km, e quale è la più economica">
+      </figure>
+    </div>
+  </div>
+</header>
+
+<div class="strada" aria-hidden="true">
+  <div class="cippo"><b>3</b><span>anni</span></div>
+  <div class="cippo"><b>5</b><span>anni</span></div>
+  <div class="cippo"><b>10</b><span>anni</span></div>
+</div>
+
+<main>
+  <section class="sezione" id="conto">
+    <div class="contenitore">
+      <h2>Cosa mette nel conto</h2>
+      <dl class="voci">
+        <div>
+          <dt>Acquisto</dt>
+          <dd>Il prezzo chiavi in mano della versione che scegli. Se hai un
+            preventivo con lo sconto, lo puoi correggere.</dd>
+        </div>
+        <div>
+          <dt>Valore quando la rivendi</dt>
+          <dd>Una stima di quanto vale l'auto dopo 3, 5 o 10 anni, in base al
+            tipo di auto, all'alimentazione e ai km. Viene tolta dal totale.</dd>
+        </div>
+        <div>
+          <dt>Carburante o energia</dt>
+          <dd>Con i consumi reali, non quelli del libretto, e i prezzi medi
+            italiani. Per le elettriche vedi due conti: ricarica a casa e alle
+            colonnine.</dd>
+        </div>
+        <div>
+          <dt>Bollo</dt>
+          <dd>Calcolato sui kW dell'auto, con il superbollo per le più potenti e
+            gli anni di esenzione delle elettriche.</dd>
+        </div>
+        <div>
+          <dt>Assicurazione</dt>
+          <dd>Un premio di riferimento per età e anni di patente, che puoi
+            sostituire con il tuo.</dd>
+        </div>
+        <div>
+          <dt>Manutenzione</dt>
+          <dd>I tagliandi previsti dalla casa, la revisione e il cambio delle
+            gomme in base ai km che fai.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sezione" id="come">
+    <div class="contenitore">
+      <h2>Come si usa</h2>
+      <ol class="passi">
+        <li><b>Cerca le auto da confrontare.</b> Puoi scrivere la marca, il
+          modello, la cilindrata o la potenza: <span class="esempi">Golf</span>,
+          <span class="esempi">1.6</span>, <span class="esempi">150 CV</span>.</li>
+        <li><b>Indica quanti km fai all'anno.</b> Gli altri valori di partenza,
+          come il prezzo dei carburanti, si possono cambiare nei parametri.</li>
+        <li><b>Guarda quale costa meno a 3, 5 e 10 anni</b>, voce per voce. Puoi
+          salvare il confronto o farne un PDF da stampare o condividere.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sezione" id="numeri">
+    <div class="contenitore">
+      <h2>Da dove arrivano i numeri</h2>
+      <p>I prezzi vengono dai listini delle case e si controllano ogni mese;
+        ogni mese si aggiungono anche modelli nuovi. I consumi di benzina, diesel e
+        ibride sono quelli reali, misurati dall'Agenzia europea dell'ambiente sulle
+        auto immatricolate in Italia. I prezzi dei carburanti sono le medie
+        italiane del bollettino petrolifero dell'Unione europea, aggiornate ogni
+        settimana.</p>
+      <p>Restano stime: quanto spendi davvero dipende da come usi l'auto, da dove
+        vivi e dal mercato. Servono a confrontare le auto tra loro, non sono
+        preventivi.</p>
+    </div>
+  </section>
+
+  <section class="sezione" id="android">
+    <div class="contenitore">
+      <h2>Installare l'app su Android</h2>
+      <ol class="passi">
+        <li>Tocca <a href="https://github.com/scapinmanuel-star/autilo-dati/releases/latest/download/Autilo.apk">Scarica per Android</a>
+          e aspetta che finisca di scaricare il file Autilo.apk.</li>
+        <li>Aprilo dalla notifica del download o dalla cartella Download.</li>
+        <li>Se il telefono lo chiede, consenti al browser di installare app
+          sconosciute, poi tocca Installa.</li>
+      </ol>
+      <p class="avviso-installazione">Android mostra un avviso perché l'app non
+        arriva da Google Play: succede con tutte le app scaricate da un sito. Per
+        aggiornarla scarica di nuovo il file dallo stesso pulsante e installalo
+        sopra: i confronti salvati restano. Su iPhone e computer usa la versione
+        nel browser.</p>
+    </div>
+  </section>
+
+  <section class="sezione" id="commenti">
+    <div class="contenitore">
+      <h2>Dicci cosa ne pensi</h2>
+      <p>Autilo è nuova e la stiamo migliorando. Se l'hai provata, rispondi a sette
+        domande facoltative: servono due minuti e non chiediamo nome né email.</p>
+      <div class="azioni">
+        <a class="pulsante pulsante-secondario" href="https://forms.gle/4rKPnuqyMtbiKWYW7">Lascia un commento</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="contenitore">
+    <p>Calcoli puramente ipotetici, a solo scopo illustrativo: non sono preventivi né offerte e non hanno alcun valore legale. Autilo è un'app indipendente, non collegata in alcun modo ai costruttori, agli importatori o ai concessionari delle auto citate.</p>
+    <p><a href="note-legali.html">Note legali e privacy</a></p>
+  </div>
+</footer>
+
+<!-- Conteggio anonimo delle visite (GoatCounter, senza cookie). -->
+<script data-goatcounter="https://autilo.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
