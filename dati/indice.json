@@ -7,9 +7,9 @@
       "data": "2026-11-21"
     },
     "carburanti.json": {
-      "byte": 1084,
-      "sha256": "6345fddbbd30008dd1fe9d907866e64c8c7e77986f5df307563ac6835297e2f9",
-      "data": "2026-11-16"
+      "byte": 1086,
+      "sha256": "edb5bb9b2e0dc1e4c9ab7ec4bd21e8b4e7b2b729dfc034ee93eaeea9f2fc2aeb",
+      "data": "2026-11-23"
     },
     "listino.json": {
       "byte": 288075,
@@ -17,8 +17,8 @@
       "data": "2026-11-21"
     },
     "storico_carburanti_it.csv": {
-      "byte": 34992,
-      "sha256": "c99f1db10109a92716246a79a0997e2275010f6a45aca402e08ef19bca73b050"
+      "byte": 35024,
+      "sha256": "4763dcfebf527ba27bc8ae7e2d7007e2bb313f87af23c18a561253ff59647cc3"
     },
     "tariffe.json": {
       "byte": 794,

@@ -1,34 +1,34 @@
 {
   "formato": 1,
-  "data_aggiornamento": "2026-11-16",
+  "data_aggiornamento": "2026-11-23",
   "nota": "Prezzi in euro al litro, tasse comprese. 'oggi' è la media nazionale dell'ultima settimana pubblicata; le medie sono aritmetiche sulle settimane del periodo.",
   "fonte": "Commissione europea, Weekly Oil Bulletin: prezzi medi nazionali settimanali per l'Italia comunicati dal MASE, tasse comprese",
   "url_fonte": "https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en",
   "file_fonte": "https://energy.ec.europa.eu/document/download/906e60ca-8b6a-44e7-8589-652854d2fd3f_en?filename=Weekly_Oil_Bulletin_Prices_History_maticni_4web.xlsx",
-  "settimana": "2026-11-16",
+  "settimana": "2026-11-23",
   "oggi": {
-    "benzina": 1.97,
-    "diesel": 2.21,
-    "gpl": 0.836
+    "benzina": 1.942,
+    "diesel": 2.195,
+    "gpl": 0.845
   },
   "media_5_anni": {
-    "benzina": 1.818,
-    "diesel": 1.789,
+    "benzina": 1.819,
+    "diesel": 1.791,
     "gpl": 0.754
   },
   "media_5_anni_periodo": {
-    "dal": "2021-11-22",
-    "al": "2026-11-16",
+    "dal": "2021-11-29",
+    "al": "2026-11-23",
     "settimane": 259
   },
   "media_3_anni": {
-    "benzina": 1.805,
-    "diesel": 1.784,
+    "benzina": 1.806,
+    "diesel": 1.787,
     "gpl": 0.732
   },
   "media_1_anno": {
-    "benzina": 1.849,
-    "diesel": 1.967,
-    "gpl": 0.751
+    "benzina": 1.853,
+    "diesel": 1.977,
+    "gpl": 0.754
   }
 }
